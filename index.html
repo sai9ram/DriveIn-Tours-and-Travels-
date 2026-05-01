@@ -609,45 +609,62 @@
         </section>
 
     <!-- How It Works -->
-        <section class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <h2 class="font-h2 mb-16">How to Plan Your Trip</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
-                    <!-- Connector line for desktop -->
-                    <div
-                        class="hidden md:block absolute top-12 left-[20%] right-[20%] h-0.5 border-t-2 border-dashed border-primary/20">
-                    </div>
-                    <div class="relative z-10 flex flex-col items-center">
-                        <div
-                            class="w-24 h-24 bg-primary-container rounded-[24px] flex items-center justify-center text-on-primary-container mb-6 shadow-xl">
-                            <span class="material-symbols-outlined text-4xl">travel_explore</span>
+        <section class="py-20 md:py-32 bg-white" id="how-it-works">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="text-center mb-16 md:mb-24">
+                    <span class="text-primary font-bold uppercase tracking-[0.2em] text-[10px] mb-2 block">Simple Process</span>
+                    <h2 class="text-3xl md:text-5xl font-h2 text-on-surface">Plan Your Journey</h2>
+                </div>
+
+                <div class="relative">
+                    <!-- Connector line - Desktop (Horizontal) -->
+                    <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 border-t-2 border-dashed border-primary/20"></div>
+                    
+                    <!-- Connector line - Mobile (Vertical) -->
+                    <div class="md:hidden absolute left-10 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-primary/20"></div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative">
+                        <!-- Step 1 -->
+                        <div class="relative flex items-start md:flex-col md:items-center group">
+                            <div class="relative z-10 flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-primary rounded-3xl flex items-center justify-center text-white mb-0 md:mb-8 shadow-xl shadow-primary/20 active:scale-95 transition-all">
+                                <span class="material-symbols-outlined text-3xl md:text-4xl">travel_explore</span>
+                                <div class="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-xs font-black border-4 border-white">1</div>
+                            </div>
+                            <div class="ml-6 md:ml-0 md:text-center pt-2 md:pt-0">
+                                <h4 class="text-xl md:text-2xl font-h2 text-on-surface mb-2">Pick a Place</h4>
+                                <p class="text-sm md:text-base text-on-surface-variant max-w-xs">Choose from our curated destinations or tell us your dream location.</p>
+                            </div>
                         </div>
-                        <h4 class="font-h3 text-xl mb-4">1. Pick a Place</h4>
-                        <p class="text-on-surface-variant max-w-xs">Choose from many great places or tell us where you
-                            want to go.</p>
-                    </div>
-                    <div class="relative z-10 flex flex-col items-center">
-                        <div
-                            class="w-24 h-24 bg-primary-container rounded-[24px] flex items-center justify-center text-on-primary-container mb-6 shadow-xl">
-                            <span class="material-symbols-outlined text-4xl">tune</span>
+
+                        <!-- Step 2 -->
+                        <div class="relative flex items-start md:flex-col md:items-center group">
+                            <div class="relative z-10 flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white border-2 border-primary/10 rounded-3xl flex items-center justify-center text-primary mb-0 md:mb-8 shadow-sm active:scale-95 transition-all">
+                                <span class="material-symbols-outlined text-3xl md:text-4xl">tune</span>
+                                <div class="absolute -top-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-xs font-black text-white border-4 border-white">2</div>
+                            </div>
+                            <div class="ml-6 md:ml-0 md:text-center pt-2 md:pt-0">
+                                <h4 class="text-xl md:text-2xl font-h2 text-on-surface mb-2">Personalize It</h4>
+                                <p class="text-sm md:text-base text-on-surface-variant max-w-xs">Customize flights, stays, and activities to match your unique style.</p>
+                            </div>
                         </div>
-                        <h4 class="font-h3 text-xl mb-4">2. Make It Your Way</h4>
-                        <p class="text-on-surface-variant max-w-xs">Change flights, hotels, and cars to what you like.
-                        </p>
-                    </div>
-                    <div class="relative z-10 flex flex-col items-center">
-                        <div
-                            class="w-24 h-24 bg-primary-container rounded-[24px] flex items-center justify-center text-on-primary-container mb-6 shadow-xl">
-                            <span class="material-symbols-outlined text-4xl">done_all</span>
+
+                        <!-- Step 3 -->
+                        <div class="relative flex items-start md:flex-col md:items-center group">
+                            <div class="relative z-10 flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white border-2 border-primary/10 rounded-3xl flex items-center justify-center text-primary mb-0 md:mb-8 shadow-sm active:scale-95 transition-all">
+                                <span class="material-symbols-outlined text-3xl md:text-4xl">done_all</span>
+                                <div class="absolute -top-2 -right-2 w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-xs font-black text-white border-4 border-white">3</div>
+                            </div>
+                            <div class="ml-6 md:ml-0 md:text-center pt-2 md:pt-0">
+                                <h4 class="text-xl md:text-2xl font-h2 text-on-surface mb-2">Travel Easy</h4>
+                                <p class="text-sm md:text-base text-on-surface-variant max-w-xs">Enjoy 24/7 support and seamless coordination while you explore.</p>
+                            </div>
                         </div>
-                        <h4 class="font-h3 text-xl mb-4">3. Travel Easy</h4>
-                        <p class="text-on-surface-variant max-w-xs">We help you all day and night. Everything is ready,
-                            just go!</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Social Proof Stats -->
+
+    <!-- Social Proof Stats -->
         <section class="py-12 bg-teal-900 text-white">
             <div class="max-w-7xl mx-auto px-6">
                 <div
