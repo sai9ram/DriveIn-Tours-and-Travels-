@@ -694,96 +694,88 @@
         </section>
 
     <!-- Featured Packages -->
-        <section class="py-24 bg-surface-container-lowest">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex justify-between items-center mb-12">
-                    <h2 class="font-h2">Best Travel Deals</h2>
-                    <div class="flex gap-4">
-                        <button
-                            class="w-12 h-12 rounded-full border border-outline hover:bg-teal-50 flex items-center justify-center">
+        <section class="py-20 md:py-32 bg-surface-container-lowest" id="featured-deals">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6">
+                    <div>
+                        <span class="text-primary font-bold uppercase tracking-[0.2em] text-[10px] mb-2 block text-center md:text-left">Limited Offers</span>
+                        <h2 class="text-2xl md:text-4xl font-h2 text-on-surface leading-tight text-center md:text-left">Best Travel Deals</h2>
+                        <p class="text-sm md:text-base text-on-surface-variant mt-2 text-center md:text-left">Hand-picked premium packages at unbeatable prices.</p>
+                    </div>
+                    <div class="hidden md:flex gap-4">
+                        <button class="w-12 h-12 rounded-full border border-primary/10 hover:bg-primary hover:text-white flex items-center justify-center transition-all">
                             <span class="material-symbols-outlined">arrow_back</span>
                         </button>
-                        <button
-                            class="w-12 h-12 rounded-full border border-outline hover:bg-teal-50 flex items-center justify-center">
+                        <button class="w-12 h-12 rounded-full border border-primary/10 hover:bg-primary hover:text-white flex items-center justify-center transition-all">
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </button>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Scrollable Container -->
+                <div class="flex md:grid md:grid-cols-3 overflow-x-auto no-scrollbar snap-x snap-mandatory gap-4 md:gap-8 -mx-4 px-4 md:mx-0 md:px-0">
                     <!-- Package 1 -->
-                    <div class="bg-white rounded-[24px] overflow-hidden shadow-lg border border-teal-50">
-                        <div class="h-64 relative">
-                            <img class="w-full h-full object-cover"
-                                data-alt="A tranquil aerial view of overwater bungalows in a crystal-clear turquoise lagoon. The bright white sand and vibrant marine life are visible through the water. This image represents a premium luxury honeymoon package, featuring high-saturation colors and a serene, aspirational vibe consistent with the Nomad Modern design language."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGbzg4LRgFKyXnxfeT3jp8POpZUulK2sF_vAMrZIrX9T7hoSE1vzuTXgNAI0JKPJn17cmIhe2baRoeGUSoievs1JwHXLoel6WPPWpoWYt_EdapINMFojKG014IWtOX-wfrE3Nv3oKxZIHK_xE2TOGOokz6XHSLYPgsxtKKf-XV9Zw9eGUwmcjAziPlI2DZlgwP6AFIFY0SnTCkXuV-CmNesON0XVQRWR-LkeThu9YqRuvDwbMp-Q4BIy-D0osP5NdibjahiopQZocL" />
-                            <div
-                                class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-teal-900">
+                    <div class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
+                        <div class="h-56 md:h-64 relative">
+                            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGbzg4LRgFKyXnxfeT3jp8POpZUulK2sF_vAMrZIrX9T7hoSE1vzuTXgNAI0JKPJn17cmIhe2baRoeGUSoievs1JwHXLoel6WPPWpoWYt_EdapINMFojKG014IWtOX-wfrE3Nv3oKxZIHK_xE2TOGOokz6XHSLYPgsxtKKf-XV9Zw9eGUwmcjAziPlI2DZlgwP6AFIFY0SnTCkXuV-CmNesON0XVQRWR-LkeThu9YqRuvDwbMp-Q4BIy-D0osP5NdibjahiopQZocL" />
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black text-teal-900 uppercase tracking-tighter">
                                 4 Days / 3 Nights
                             </div>
                         </div>
-                        <div class="p-8">
-                            <h4 class="font-h3 text-xl mb-4">Tropical Bliss Mauritius</h4>
+                        <div class="p-6 md:p-8">
+                            <h4 class="font-h2 text-xl md:text-2xl text-on-surface mb-4">Tropical Bliss Mauritius</h4>
                             <div class="flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-on-surface-variant uppercase font-bold tracking-widest">Per
-                                        Person</p>
-                                    <p class="text-2xl font-h1 text-primary">$745</p>
+                                    <p class="text-[10px] text-on-surface-variant uppercase font-black tracking-widest mb-1">Per Person</p>
+                                    <p class="text-2xl md:text-3xl font-h1 text-primary">$745</p>
                                 </div>
-                                <button
-                                    class="px-6 py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all">
-                                    View Details
+                                <button class="px-6 py-3 bg-teal-50 text-primary font-bold rounded-2xl hover:bg-primary hover:text-white transition-all text-sm">
+                                    Book Now
                                 </button>
                             </div>
                         </div>
                     </div>
+
                     <!-- Package 2 -->
-                    <div class="bg-white rounded-[24px] overflow-hidden shadow-lg border border-teal-50">
-                        <div class="h-64 relative">
-                            <img class="w-full h-full object-cover"
-                                data-alt="A wide-angle shot of a classic vintage car driving through the historic streets of London at night, with the iconic Big Ben illuminated in the background. The scene is full of dynamic motion and city lights, capturing the excitement of a self-drive European adventure with sophisticated, modern color grading."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMsQiOmNaDE3vC8Jz2ZbZxy2nhGKrdt__QVjZysOnkcoHKCzmts7U0y1BBZDOgt3r8GP22EoBo-JhazVtVRMsMCAti7rhHhJBVGchJL7zmy1K7JQPwGDog0WY8sKzgM5z9ejXp5HOq1j9pXhUqBf-yq2PlOWsbGySlAP-vZka8-KUAlyLDGltL76MgEe477OqxHAFY22N2bHTtMhndp2Y0JgK8FEpvrQLUgVkNkIZy4E3pQmbKjDMwKyKBbKro_EyABfGGJ_fVRm7f" />
-                            <div
-                                class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-teal-900">
+                    <div class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
+                        <div class="h-56 md:h-64 relative">
+                            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMsQiOmNaDE3vC8Jz2ZbZxy2nhGKrdt__QVjZysOnkcoHKCzmts7U0y1BBZDOgt3r8GP22EoBo-JhazVtVRMsMCAti7rhHhJBVGchJL7zmy1K7JQPwGDog0WY8sKzgM5z9ejXp5HOq1j9pXhUqBf-yq2PlOWsbGySlAP-vZka8-KUAlyLDGltL76MgEe477OqxHAFY22N2bHTtMhndp2Y0JgK8FEpvrQLUgVkNkIZy4E3pQmbKjDMwKyKBbKro_EyABfGGJ_fVRm7f" />
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black text-teal-900 uppercase tracking-tighter">
                                 10 Days / 9 Nights
                             </div>
                         </div>
-                        <div class="p-8">
-                            <h4 class="font-h3 text-xl mb-4">Ultimate Europe Self-Drive</h4>
+                        <div class="p-6 md:p-8">
+                            <h4 class="font-h2 text-xl md:text-2xl text-on-surface mb-4">Ultimate Europe Drive</h4>
                             <div class="flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-on-surface-variant uppercase font-bold tracking-widest">Per
-                                        Person</p>
-                                    <p class="text-2xl font-h1 text-primary">$2,190</p>
+                                    <p class="text-[10px] text-on-surface-variant uppercase font-black tracking-widest mb-1">Per Person</p>
+                                    <p class="text-2xl md:text-3xl font-h1 text-primary">$2,190</p>
                                 </div>
-                                <button
-                                    class="px-6 py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all">
-                                    View Details
+                                <button class="px-6 py-3 bg-teal-50 text-primary font-bold rounded-2xl hover:bg-primary hover:text-white transition-all text-sm">
+                                    Book Now
                                 </button>
                             </div>
                         </div>
                     </div>
+
                     <!-- Package 3 -->
-                    <div class="bg-white rounded-[24px] overflow-hidden shadow-lg border border-teal-50">
-                        <div class="h-64 relative">
-                            <img class="w-full h-full object-cover"
-                                data-alt="A breathtaking landscape of Yosemite National Park featuring El Capitan reflecting in the Merced River during autumn. The vibrant oranges and yellows of the trees contrast beautifully with the deep teals of the river and mountain shadows. This image communicates a rugged, family-friendly adventure in the great outdoors."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXa8W4hlGK3ePQ-wa8SlSYKlCWftt78YjHLp8I0Ozdm3tmimauwYMV3g8ookA1ZtWkTzPAOGyQfkNnEiespGk4nOlICkK_DEKokEyAcDWuxEdUzAYFZowNuurh1dZb4-OHIj4D4bSe7uR_j9x4hnBxiYPECHlZWxPm3rqHvsw1msXeRjUxUwH8P7e1fRflt2ubl3jAZpWQMhjDGjXNCoSn0hKxN3MWgiuHHcASpBGsU2-TAdl7F8lY8fVJlzU7HEFmdabsRZ0He_bB" />
-                            <div
-                                class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-teal-900">
+                    <div class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
+                        <div class="h-56 md:h-64 relative">
+                            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXa8W4hlGK3ePQ-wa8SlSYKlCWftt78YjHLp8I0Ozdm3tmimauwYMV3g8ookA1ZtWkTzPAOGyQfkNnEiespGk4nOlICkK_DEKokEyAcDWuxEdUzAYFZowNuurh1dZb4-OHIj4D4bSe7uR_j9x4hnBxiYPECHlZWxPm3rqHvsw1msXeRjUxUwH8P7e1fRflt2ubl3jAZpWQMhjDGjXNCoSn0hKxN3MWgiuHHcASpBGsU2-TAdl7F8lY8fVJlzU7HEFmdabsRZ0He_bB" />
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black text-teal-900 uppercase tracking-tighter">
                                 6 Days / 5 Nights
                             </div>
                         </div>
-                        <div class="p-8">
-                            <h4 class="font-h3 text-xl mb-4">Majestic US Parks Tour</h4>
+                        <div class="p-6 md:p-8">
+                            <h4 class="font-h2 text-xl md:text-2xl text-on-surface mb-4">Majestic US Parks</h4>
                             <div class="flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-on-surface-variant uppercase font-bold tracking-widest">Per
-                                        Person</p>
-                                    <p class="text-2xl font-h1 text-primary">$1,550</p>
+                                    <p class="text-[10px] text-on-surface-variant uppercase font-black tracking-widest mb-1">Per Person</p>
+                                    <p class="text-2xl md:text-3xl font-h1 text-primary">$1,550</p>
                                 </div>
-                                <button
-                                    class="px-6 py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all">
-                                    View Details
+                                <button class="px-6 py-3 bg-teal-50 text-primary font-bold rounded-2xl hover:bg-primary hover:text-white transition-all text-sm">
+                                    Book Now
                                 </button>
                             </div>
                         </div>
@@ -791,7 +783,8 @@
                 </div>
             </div>
         </section>
-        <section class="py-24 bg-surface">
+
+    <section class="py-24 bg-surface">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex justify-between items-end mb-12">
                     <div>
