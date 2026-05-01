@@ -1234,27 +1234,33 @@
             </div>
         </section>
         <!-- Final CTA Section -->
-        <section class="relative py-32 mx-6 my-12 rounded-[48px] overflow-hidden">
+        <section class="relative py-24 md:py-32 mx-4 md:mx-6 my-16 rounded-[40px] md:rounded-[64px] overflow-hidden shadow-2xl shadow-teal-900/20" id="final-cta">
+            <!-- Background Image with Immersive Overlay -->
             <div class="absolute inset-0">
                 <img class="w-full h-full object-cover"
-                    data-alt="A high-altitude mountain lake surrounded by autumn forest and snow-capped peaks. A small group of travelers is seen in the distance, enjoying the pristine nature. The scene is illuminated by crisp, bright daylight that emphasizes the crystal-clear water and vibrant natural colors, perfectly reflecting the nomad lifestyle."
+                    data-alt="Immersive landscape of a pristine mountain lake, symbolizing the ultimate travel destination."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbNz6Bsi5Jq6vDJkLow8OAvuVbVdZ4VRw8Tkc0W-6EY3yazwGmNB-h7g4_Mpk4xvTWrqQEXKtrOE7fc5iYHH5vroCjadGfxzkNYld7mEIwDSHyfrgPEz5zTzr-zYtd5r2j8iQZKKAPt9AJ4HNcka5TnkviSf-qWXSblESndyU79kAkvnvuC5oLtbp8qHnRns8OPTELqceq8pXDR90PGKEqme7Ayg3xtuRch86CxWzONP60jmazoH7KXVX-qfKSdM5UO8C9F3KxHbM_" />
-                <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-teal-950/80 via-teal-950/60 to-orange-950/40 backdrop-blur-[2px]"></div>
             </div>
+
+            <!-- Content Container -->
             <div class="relative max-w-4xl mx-auto text-center text-white px-6">
-                <h2 class="font-h1 text-5xl mb-8">Not sure where to go?</h2>
-                <p class="font-body-lg text-xl mb-12 opacity-90">Our team is ready to help you plan your next trip.</p>
-                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <span class="text-orange-400 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 block">Ready for Adventure?</span>
+                <h2 class="text-3xl md:text-6xl font-h1 mb-6 leading-tight">Not sure where to <span class="text-orange-400">start?</span></h2>
+                <p class="text-sm md:text-xl mb-10 opacity-90 font-light max-w-2xl mx-auto">Our travel experts are ready to curate the perfect itinerary tailored to your dreams and budget.</p>
+                
+                <!-- Call to Action Buttons -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
                     <a href="tel:+910000000000"
-                        class="px-10 py-5 bg-tertiary-container text-on-tertiary-container rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-2xl hover:scale-105 transition-transform">
+                        class="w-full md:w-auto px-10 py-5 bg-white text-teal-950 rounded-2xl md:rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:scale-105 active:scale-95 transition-all">
                         <span class="material-symbols-outlined">call</span>
                         Talk to Us
                     </a>
-                    <button
-                        class="px-10 py-5 bg-white text-teal-900 rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-2xl hover:scale-105 transition-transform">
-                        <span class="material-symbols-outlined">mail</span>
-                        Get Price for Trip
-                    </button>
+                    <a href="https://wa.me/910000000000"
+                        class="w-full md:w-auto px-10 py-5 bg-primary text-white rounded-2xl md:rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:scale-105 active:scale-95 transition-all">
+                        <span class="material-symbols-outlined text-2xl">chat</span>
+                        Get Custom Price
+                    </a>
                 </div>
             </div>
         </section>
