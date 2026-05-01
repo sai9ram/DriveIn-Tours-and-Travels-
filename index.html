@@ -348,84 +348,96 @@
         <!-- Indian Tour Packages -->
         <section class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="flex justify-between items-end mb-12">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-4">
                     <div>
-                        <h2 class="font-h2 text-on-surface mb-2">Indian Tour Packages</h2>
-                        <p class="text-on-surface-variant">Explore the beauty of India with our best-selling trips.</p>
+                        <span class="text-primary font-bold uppercase tracking-[0.2em] text-[10px] mb-2 block text-center md:text-left">Our Homeland</span>
+                        <h2 class="text-2xl md:text-4xl font-h2 text-on-surface leading-tight text-center md:text-left">Explore the Soul of India</h2>
+                        <p class="text-sm md:text-base text-on-surface-variant mt-2 text-center md:text-left">Hand-picked destinations for your perfect getaway.</p>
                     </div>
-                    <button class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
-                        View All Indian Trips <span class="material-symbols-outlined">chevron_right</span>
-                    </button>
+                    <a href="#" class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all group">
+                        View All Indian Trips 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-gutter">
+
+                <!-- Category Chips (Mobile Scrollable) -->
+                <div class="flex gap-2 overflow-x-auto no-scrollbar mb-8 pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+                    <button class="px-5 py-2.5 bg-primary text-white rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap shadow-lg shadow-primary/20 active:scale-90 transition-all">All India</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Beaches</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Mountains</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Spiritual</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Heritage</button>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
                     <!-- Goa Card -->
-                    <div
-                        class="group relative h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIdyO4gJ7gJi_BSaIVpiF_wC90-dtW08vpyP9ULdQISgOcnQ8swnsBHtIoSsFZPyTWSSwdz6B0qDhAbVjvjNHENZZJEO15Ya8yZEiL0e5F6qMe9Xpwq-DAVkCBV4A-QyEn5VYTXjI2A65PFmHRQpKGoWPstYSLd55PNhZGfcsSTunzUhkr5pK_2VRj9JmJpJo3wJ1JCDjxMWOPY_SA7V1xnKMyDpo4MT63fB27f9WIwlDs36lsiPSYb6uQXaGPkkZDSILiEfKF0zb5" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From ₹8,999
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIdyO4gJ7gJi_BSaIVpiF_wC90-dtW08vpyP9ULdQISgOcnQ8swnsBHtIoSsFZPyTWSSwdz6B0qDhAbVjvjNHENZZJEO15Ya8yZEiL0e5F6qMe9Xpwq-DAVkCBV4A-QyEn5VYTXjI2A65PFmHRQpKGoWPstYSLd55PNhZGfcsSTunzUhkr5pK_2VRj9JmJpJo3wJ1JCDjxMWOPY_SA7V1xnKMyDpo4MT63fB27f9WIwlDs36lsiPSYb6uQXaGPkkZDSILiEfKF0zb5" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-white/90 backdrop-blur-md text-teal-900 text-[8px] font-black uppercase tracking-tighter px-2 py-0.5 rounded-lg shadow-sm">Trending</span>
                         </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-base md:text-h3 mb-1">Goa Beaches</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 4 Days / 3 Nights
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹8,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Goa Beaches</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                4 Days / 3 Nights
                             </div>
                         </div>
                     </div>
+
                     <!-- Kerala Card -->
-                    <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From ₹13,999
-                        </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-base md:text-h3 mb-1">Kerala Backwaters</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 5 Days / 4 Nights
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹13,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Kerala Backwaters</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                5 Days / 4 Nights
                             </div>
                         </div>
                     </div>
+
                     <!-- Andaman Card -->
-                    <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGbzg4LRgFKyXnxfeT3jp8POpZUulK2sF_vAMrZIrX9T7hoSE1vzuTXgNAI0JKPJn17cmIhe2baRoeGUSoievs1JwHXLoel6WPPWpoWYt_EdapINMFojKG014IWtOX-wfrE3Nv3oKxZIHK_xE2TOGOokz6XHSLYPgsxtKKf-XV9Zw9eGUwmcjAziPlI2DZlgwP6AFIFY0SnTCkXuV-CmNesON0XVQRWR-LkeThu9YqRuvDwbMp-Q4BIy-D0osP5NdibjahiopQZocL" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From ₹12,999
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGbzg4LRgFKyXnxfeT3jp8POpZUulK2sF_vAMrZIrX9T7hoSE1vzuTXgNAI0JKPJn17cmIhe2baRoeGUSoievs1JwHXLoel6WPPWpoWYt_EdapINMFojKG014IWtOX-wfrE3Nv3oKxZIHK_xE2TOGOokz6XHSLYPgsxtKKf-XV9Zw9eGUwmcjAziPlI2DZlgwP6AFIFY0SnTCkXuV-CmNesON0XVQRWR-LkeThu9YqRuvDwbMp-Q4BIy-D0osP5NdibjahiopQZocL" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-teal-500/90 backdrop-blur-md text-white text-[8px] font-black uppercase tracking-tighter px-2 py-0.5 rounded-lg shadow-sm">Popular</span>
                         </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-base md:text-h3 mb-1">Andaman Islands</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 6 Days / 5 Nights
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹12,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Andaman Islands</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                6 Days / 5 Nights
                             </div>
                         </div>
                     </div>
+
                     <!-- Kashmir Card -->
-                    <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKMZjjZUuMZ3mx41qlvtXx6_JDpxU4RBbGXiJUlgQGZKcePZoA_SCQDkODSbFptqsStpUcOEeS78OghHhBRND5_vccGxmaNygtb_GPCbdU1rbvGvFPS5ec-3Sz049rSsYi70b9n2FpCSWPbDMS6fdHQxSlEY8IHyVItHuMENhZeur4_cqn2qf7ybUwIZYcUA0Du-VQCxal8O8Tl0i0qEXw6jG_BSsjvZ2MWb5TbRRAq8zsClG-MrdgqntL1NNTYN0Rvq5pF2wfIeKr" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From ₹14,999
-                        </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-base md:text-h3 mb-1">Kashmir Paradise</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 7 Days / 6 Nights
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKMZjjZUuMZ3mx41qlvtXx6_JDpxU4RBbGXiJUlgQGZKcePZoA_SCQDkODSbFptqsStpUcOEeS78OghHhBRND5_vccGxmaNygtb_GPCbdU1rbvGvFPS5ec-3Sz049rSsYi70b9n2FpCSWPbDMS6fdHQxSlEY8IHyVItHuMENhZeur4_cqn2qf7ybUwIZYcUA0Du-VQCxal8O8Tl0i0qEXw6jG_BSsjvZ2MWb5TbRRAq8zsClG-MrdgqntL1NNTYN0Rvq5pF2wfIeKr" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹14,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Kashmir Paradise</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                7 Days / 6 Nights
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Mobile View All Button -->
+                <div class="mt-10 md:hidden">
+                    <a href="#" class="w-full flex items-center justify-center gap-2 bg-teal-50 text-primary py-4 rounded-2xl font-bold active:scale-95 transition-all">
+                        View All Indian Trips
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -442,76 +454,80 @@
                         View All Places <span class="material-symbols-outlined">chevron_right</span>
                     </button>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <div class="grid grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
                     <!-- Bali Card -->
                     <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
+                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover"
                             data-alt="An overhead view of a luxury infinity pool overlooking lush tropical rice terraces in Bali. The morning mist clings to the jungle, and vibrant green palms frame the serene scene. The image uses a soft, Nomad Modern aesthetic with a cool-to-warm teal gradient that enhances the peaceful and exotic atmosphere."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsq_-z7SWKtEIooRWVm0W6hG1wTcVONWmmPIaDSiZLYwd1q2bduhweRS7-JQJIwmT6yucEejf5_vE1Q9HWNQ20ygDBTo4m8I_H4Vbe-B5gPaQuKMiA0Lr2MLS4xDTueOgfGFux0SVZe-Y4ImPcP8TAbzLmvFokQuw6D71LTDqvNOQviDETvn2uD_YQuVGD3epEc9kotbYJ3a78BEJ7R6ITsPT1lcsbe50aSFbo-a1bg8dECFGEbi0I07l0z_UVgNvXJsApiaZInPVA" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
                         <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
+                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
                             From ₹49,999
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6">
+                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                             <h3 class="text-white text-h3 mb-1">Bali</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 6 Days / 5 Nights
+                            <div class="flex items-center gap-1.5 text-white/70 text-[10px] md:text-sm">
+                                <span class="material-symbols-outlined text-xs md:text-sm">schedule</span> 6 Days / 5 Nights
                             </div>
                         </div>
                     </div>
                     <!-- Dubai Card -->
                     <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
+                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover"
                             data-alt="The futuristic Dubai skyline at dusk, showcasing the Burj Khalifa and glowing skyscrapers reflected in the calm waters of the bay. The city lights create a brilliant orange and teal contrast against the deep twilight sky, illustrating a sleek, modern luxury travel experience with high visual clarity."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuApRwTsU1Qc4IXfIkFZCnoGeQJqC3v9d9-iZENnjWRWYzwcAL3tNsGJeuFyFgIWT8a7uzfjv4gpNoWO6emrdPekTIVu6oYY4zjAl-2soUxGHQWHiZ9S1CHfeV2791dhSEz2xbdSlRqx9s1IPdC38T-AcyiDU6x7g2Yi0kHXOt9paY8MET0FM3Lqq0J8hdBxBcC6pyDCDR6sXCOZ8yCij_7Ab03nsC6EpgvRrqA5NfqFzR81jyXrM0lhQAnSZ5F_wp0uJH2QCRgdCUX2" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
                         <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
+                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
                             From ₹45,999
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6">
+                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                             <h3 class="text-white text-h3 mb-1">Dubai</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 5 Days / 4 Nights
+                            <div class="flex items-center gap-1.5 text-white/70 text-[10px] md:text-sm">
+                                <span class="material-symbols-outlined text-xs md:text-sm">schedule</span> 5 Days / 4 Nights
                             </div>
                         </div>
                     </div>
                     <!-- Kashmir Card -->
-                    <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            data-alt="A peaceful Dal Lake in Kashmir with traditional wooden houseboats floating on the mirror-like water during early morning. Snow-capped mountains loom in the distance under a pale blue sky. The scene is tranquil and evokes a sense of timeless exploration, styled with professional photography techniques."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKMZjjZUuMZ3mx41qlvtXx6_JDpxU4RBbGXiJUlgQGZKcePZoA_SCQDkODSbFptqsStpUcOEeS78OghHhBRND5_vccGxmaNygtb_GPCbdU1rbvGvFPS5ec-3Sz049rSsYi70b9n2FpCSWPbDMS6fdHQxSlEY8IHyVItHuMENhZeur4_cqn2qf7ybUwIZYcUA0Du-VQCxal8O8Tl0i0qEXw6jG_BSsjvZ2MWb5TbRRAq8zsClG-MrdgqntL1NNTYN0Rvq5pF2wfIeKr" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
-                        <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
-                            From ₹14,999
-                        </div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <h3 class="text-white text-h3 mb-1">Kashmir</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 7 Days / 6 Nights
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKMZjjZUuMZ3mx41qlvtXx6_JDpxU4RBbGXiJUlgQGZKcePZoA_SCQDkODSbFptqsStpUcOEeS78OghHhBRND5_vccGxmaNygtb_GPCbdU1rbvGvFPS5ec-3Sz049rSsYi70b9n2FpCSWPbDMS6fdHQxSlEY8IHyVItHuMENhZeur4_cqn2qf7ybUwIZYcUA0Du-VQCxal8O8Tl0i0qEXw6jG_BSsjvZ2MWb5TbRRAq8zsClG-MrdgqntL1NNTYN0Rvq5pF2wfIeKr" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹14,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Kashmir Paradise</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                7 Days / 6 Nights
                             </div>
                         </div>
+
+                <!-- Mobile View All Button -->
+                <div class="mt-10 md:hidden">
+                    <a href="#" class="w-full flex items-center justify-center gap-2 bg-teal-50 text-primary py-4 rounded-2xl font-bold active:scale-95 transition-all">
+                        View All Indian Trips
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                    </div>
                     </div>
                     <!-- Switzerland Card -->
                     <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
+                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover"
                             data-alt="A high-altitude alpine lake in Switzerland, surrounded by jagged granite peaks and wildflower meadows. The water is a brilliant turquoise, and the lighting is crisp and clear, reflecting a premium outdoor adventure lifestyle. The composition emphasizes depth and the majestic scale of the landscape."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
                         <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
+                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
                             From ₹1,85,000
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6">
+                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                             <h3 class="text-white text-h3 mb-1">Switzerland</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 8 Days / 7 Nights
+                            <div class="flex items-center gap-1.5 text-white/70 text-[10px] md:text-sm">
+                                <span class="material-symbols-outlined text-xs md:text-sm">schedule</span> 8 Days / 7 Nights
                             </div>
                         </div>
                     </div>
@@ -773,40 +789,32 @@
                         View All South India Trips <span class="material-symbols-outlined">chevron_right</span>
                     </button>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <div class="grid grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
                     <!-- Kerala Card -->
-                    <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            data-alt="A serene houseboat cruising through the lush green backwaters of Kerala, surrounded by palm trees and tranquil waters under a soft morning sun. The image captures the essence of peaceful luxury travel in South India."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
-                        <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
-                            From $599
-                        </div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <h3 class="text-white text-h3 mb-1">Kerala Backwaters</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 5 Days / 4 Nights
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹13,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Kerala Backwaters</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                5 Days / 4 Nights
                             </div>
-                            <button
-                                class="w-full py-2 bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-lg text-sm font-bold hover:bg-white hover:text-primary transition-all opacity-0 group-hover:opacity-100">View
-                                Details</button>
                         </div>
                     </div>
                     <!-- Hampi Card -->
                     <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
+                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover"
                             data-alt="The ancient stone-carved ruins of Hampi temples at golden hour, with boulders and historical structures bathed in warm light. This UNESCO world heritage site offers a glimpse into India's rich architectural history."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
                         <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
+                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
                             From $450
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6">
+                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                             <h3 class="text-white text-h3 mb-1">Hampi Temples</h3>
                             <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
                                 <span class="material-symbols-outlined text-sm">schedule</span> 4 Days / 3 Nights
@@ -818,16 +826,16 @@
                     </div>
                     <!-- Munnar Card -->
                     <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
+                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover"
                             data-alt="Rolling hills of vibrant green tea gardens in Munnar under a misty morning sky. The terraced landscape creates a beautiful geometric pattern, perfect for nature lovers and landscape photography."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
                         <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
+                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
                             From $399
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6">
+                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                             <h3 class="text-white text-h3 mb-1">Munnar Tea Gardens</h3>
                             <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
                                 <span class="material-symbols-outlined text-sm">schedule</span> 4 Days / 3 Nights
@@ -839,15 +847,15 @@
                     </div>
                     <!-- Ooty Card -->
                     <div
-                        class="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl shadow-primary-container/5 hover:-translate-y-2 transition-transform duration-500">
+                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
-                        <div class="absolute inset-0 teal-gradient-overlay opacity-80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
                         <div
-                            class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">
+                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
                             From ₹6,999
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6">
+                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                             <h3 class="text-white text-h3 mb-1">Ooty Hill Station</h3>
                             <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
                                 <span class="material-symbols-outlined text-sm">schedule</span> 3 Days / 2 Nights
