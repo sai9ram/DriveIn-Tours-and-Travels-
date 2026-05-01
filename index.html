@@ -784,22 +784,37 @@
             </div>
         </section>
 
-    <section class="py-24 bg-surface">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex justify-between items-end mb-12">
+    <section class="py-20 md:py-24 bg-white" id="south-india-trips">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-4">
                     <div>
-                        <h2 class="font-h2 text-on-surface mb-2">South India Trips</h2>
-                        <p class="text-on-surface-variant">Visit the best places in South India with us.</p>
+                        <span class="text-primary font-bold uppercase tracking-[0.2em] text-[10px] mb-2 block text-center md:text-left">Southern Soul</span>
+                        <h2 class="text-2xl md:text-4xl font-h2 text-on-surface leading-tight text-center md:text-left">South India Journeys</h2>
+                        <p class="text-sm md:text-base text-on-surface-variant mt-2 text-center md:text-left">Experience the lush backwaters and ancient temples.</p>
                     </div>
-                    <button class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
-                        View All South India Trips <span class="material-symbols-outlined">chevron_right</span>
-                    </button>
+                    <a href="#" class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all group">
+                        View All Southern Trips 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
-                <div class="grid grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
+
+                <!-- Category Chips (Mobile Scrollable) -->
+                <div class="flex gap-2 overflow-x-auto no-scrollbar mb-8 pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+                    <button class="px-5 py-2.5 bg-primary text-white rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap shadow-lg shadow-primary/20 active:scale-90 transition-all">All South</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Kerala</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Karnataka</button>
+                    <button class="px-5 py-2.5 bg-teal-50 text-teal-900/60 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap border border-teal-100/50 active:scale-90 transition-all">Temples</button>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
                     <!-- Kerala Card -->
                     <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-white/90 backdrop-blur-md text-teal-900 text-[8px] font-black uppercase tracking-tighter px-2 py-0.5 rounded-lg shadow-sm">Popular</span>
+                        </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
                             <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹13,999</p>
                             <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Kerala Backwaters</h3>
@@ -809,73 +824,64 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Hampi Card -->
-                    <div
-                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
-                        <img class="w-full h-full object-cover"
-                            data-alt="The ancient stone-carved ruins of Hampi temples at golden hour, with boulders and historical structures bathed in warm light. This UNESCO world heritage site offers a glimpse into India's rich architectural history."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From $450
-                        </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-h3 mb-1">Hampi Temples</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 4 Days / 3 Nights
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹9,500</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Hampi Temples</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                4 Days / 3 Nights
                             </div>
-                            <button
-                                class="w-full py-2 bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-lg text-sm font-bold hover:bg-white hover:text-primary transition-all opacity-0 group-hover:opacity-100">View
-                                Details</button>
                         </div>
                     </div>
+
                     <!-- Munnar Card -->
-                    <div
-                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
-                        <img class="w-full h-full object-cover"
-                            data-alt="Rolling hills of vibrant green tea gardens in Munnar under a misty morning sky. The terraced landscape creates a beautiful geometric pattern, perfect for nature lovers and landscape photography."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From $399
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7_vT3A5XJ1x-r-jP36N6P7z7-rFv_V6S0E2M-v7j8_L6X_V9r3t-w0z8-G_v7_v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7v7" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-teal-500/90 backdrop-blur-md text-white text-[8px] font-black uppercase tracking-tighter px-2 py-0.5 rounded-lg shadow-sm">Trending</span>
                         </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-h3 mb-1">Munnar Tea Gardens</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 4 Days / 3 Nights
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹8,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Munnar Gardens</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                4 Days / 3 Nights
                             </div>
-                            <button
-                                class="w-full py-2 bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-lg text-sm font-bold hover:bg-white hover:text-primary transition-all opacity-0 group-hover:opacity-100">View
-                                Details</button>
                         </div>
                     </div>
+
                     <!-- Ooty Card -->
-                    <div
-                        class="group relative aspect-[3/4] md:h-[420px] rounded-2xl overflow-hidden shadow-md active:scale-95 transition-all duration-300">
-                        <img class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/20 to-transparent opacity-90"></div>
-                        <div
-                            class="absolute top-3 right-3 md:top-4 md:right-4 bg-tertiary-container text-on-tertiary-container px-2 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold">
-                            From ₹6,999
-                        </div>
-                        <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
-                            <h3 class="text-white text-h3 mb-1">Ooty Hill Station</h3>
-                            <div class="flex items-center gap-2 text-white/80 text-sm mb-4">
-                                <span class="material-symbols-outlined text-sm">schedule</span> 3 Days / 2 Nights
+                    <div class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0B-CovN98H6YHByFslC7CfvwjZN-ldlYWr0mO76vkgZ__i9L7v0Hxn5dEG2ZRfDwj6PVE3U-HNVpH14XrFODRhotgAsfUkvHfWcOvuQ1TrL011qdDX8yC-wXvJ7XUteE4XA1fi28skfD7AOcAHo2vjX1hwZbaXvgpDrO2-_i73kku4jVqgW6DXWifNdkxL2ZdxpGsFFZN8lgIV7rhF6FVEs_MuM6vEdr7_Bobdf6fvYek09g_qTbc2BXUFPdxJ6KplJb2V3bzvYI" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
+                            <p class="text-orange-400 text-[9px] font-bold uppercase tracking-widest mb-1">From ₹6,999</p>
+                            <h3 class="text-white text-base md:text-2xl font-h2 mb-1">Ooty Hill Station</h3>
+                            <div class="flex items-center gap-1 text-white/60 text-[9px] md:text-sm">
+                                <span class="material-symbols-outlined text-[12px] md:text-sm">schedule</span>
+                                3 Days / 2 Nights
                             </div>
-                            <button
-                                class="w-full py-2 bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-lg text-sm font-bold hover:bg-white hover:text-primary transition-all opacity-0 group-hover:opacity-100">View
-                                Details</button>
                         </div>
                     </div>
+                </div>
+
+                <!-- Mobile View All Button -->
+                <div class="mt-10 md:hidden">
+                    <a href="#" class="w-full flex items-center justify-center gap-2 bg-teal-50 text-primary py-4 rounded-2xl font-bold active:scale-95 transition-all">
+                        View All South Indian Trips
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Premium Luxury Packages -->
+    <!-- Premium Luxury Packages -->
         <section class="py-32 bg-teal-950 text-white overflow-hidden relative">
             <div class="absolute top-0 right-0 w-96 h-96 bg-teal-800/20 blur-[120px] rounded-full -mr-48 -mt-48"></div>
             <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange-900/10 blur-[120px] rounded-full -ml-48 -mb-48"></div>
