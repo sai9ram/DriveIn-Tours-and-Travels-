@@ -159,7 +159,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="relative h-[400px] md:h-[500px] w-full overflow-hidden flex items-center justify-center">
+        <section class="relative h-[300px] md:h-[500px] w-full overflow-hidden flex items-center justify-center">
             <div class="absolute inset-0">
                 <img class="w-full h-full object-cover"
                     src="Hill Station Escapes.jpg"
@@ -167,38 +167,38 @@
                 <div class="absolute inset-0 bg-teal-950/60 backdrop-blur-[2px]"></div>
             </div>
             <div class="relative max-w-7xl mx-auto px-4 md:px-6 text-center">
-                <h1 class="font-h1 text-white text-4xl md:text-7xl mb-4 leading-tight">Explore the <span class="text-orange-400">World</span></h1>
-                <p class="font-body-lg text-teal-50/90 text-base md:text-xl max-w-2xl mx-auto">From tropical beaches to snow-capped mountains, discover your next adventure with Drive In Holidays.</p>
+                <h1 class="font-h1 text-white text-3xl md:text-7xl mb-4 leading-tight">Explore the <span class="text-orange-400">World</span></h1>
+                <p class="font-body-lg text-teal-50/90 text-sm md:text-xl max-w-2xl mx-auto">From tropical beaches to snow-capped mountains, discover your next adventure with Drive In Holidays.</p>
             </div>
         </section>
 
         <!-- Search & Filter Section -->
-        <section class="relative -mt-10 z-10 px-4">
-            <div class="max-w-5xl mx-auto bg-white rounded-[32px] shadow-2xl p-6 md:p-8 border border-teal-50">
+        <section class="relative -mt-8 md:-mt-10 z-10 px-4">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-[32px] shadow-2xl p-5 md:p-8 border border-teal-50">
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div class="flex-1 w-full relative">
                         <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-teal-600">search</span>
-                        <input type="text" id="destination-search" placeholder="Search for a country, city or theme..." class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary/20 text-on-surface" />
+                        <input type="text" id="destination-search" placeholder="Search for a country, city..." class="w-full pl-11 pr-4 py-3.5 md:py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary/20 text-on-surface text-sm" />
                     </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2 md:pb-0" id="filter-container">
-                        <button data-filter="all" class="filter-btn px-6 py-4 bg-primary text-white rounded-2xl font-bold whitespace-nowrap active:scale-95 transition-all">All</button>
-                        <button data-filter="international" class="filter-btn px-6 py-4 bg-teal-50 text-teal-900 rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all">International</button>
-                        <button data-filter="domestic" class="filter-btn px-6 py-4 bg-teal-50 text-teal-900 rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all">Domestic</button>
-                        <button data-filter="tirupati" class="filter-btn px-6 py-4 bg-teal-50 text-teal-900 rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all">Tirupati Special</button>
-                        <button data-filter="honeymoon" class="filter-btn px-6 py-4 bg-teal-50 text-teal-900 rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all">Honeymoon</button>
+                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-1 md:pb-0" id="filter-container">
+                        <button data-filter="all" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-primary text-white rounded-xl md:rounded-2xl font-bold whitespace-nowrap active:scale-95 transition-all text-sm">All</button>
+                        <button data-filter="international" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">International</button>
+                        <button data-filter="domestic" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Domestic</button>
+                        <button data-filter="tirupati" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Tirupati Special</button>
+                        <button data-filter="honeymoon" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Honeymoon</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Global Destinations -->
-        <section class="py-20 md:py-32">
+        <section class="py-16 md:py-32">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-12 gap-6">
                     <div>
-                        <span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-2 block" id="section-subtitle">World Explorer</span>
-                        <h2 class="text-3xl md:text-5xl font-h2 text-on-surface" id="section-title">International Wonders</h2>
-                        <p class="text-on-surface-variant mt-4 max-w-xl" id="section-description">Premium global destinations hand-picked for the ultimate travel experience.</p>
+                        <span class="text-primary font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs mb-2 block" id="section-subtitle">World Explorer</span>
+                        <h2 class="text-2xl md:text-5xl font-h2 text-on-surface" id="section-title">International Wonders</h2>
+                        <p class="text-on-surface-variant mt-4 max-w-xl text-sm md:text-base" id="section-description">Premium global destinations hand-picked for the ultimate travel experience.</p>
                     </div>
                     <div class="text-on-surface-variant font-medium">
                         Showing <span id="destination-count" class="text-primary font-bold">0</span> destinations
@@ -231,15 +231,15 @@
             <div class="relative max-w-7xl mx-auto px-4 md:px-6">
 
                 <!-- Section Header -->
-                <div class="text-center mb-14">
-                    <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-400/30 text-orange-300 text-xs font-black uppercase tracking-[0.3em] px-5 py-2 rounded-full mb-5">
+                <div class="text-center mb-10 md:mb-14 px-2">
+                    <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-400/30 text-orange-300 text-[10px] md:text-xs font-black uppercase tracking-[0.3em] px-5 py-2 rounded-full mb-5">
                         <span class="material-symbols-outlined text-sm">stars</span>
                         DriveIn Special
                     </div>
                     <h2 class="text-3xl md:text-6xl font-h1 text-white mb-5 leading-tight">
                         South Indian <span class="text-orange-400">Tours</span>
                     </h2>
-                    <p class="text-teal-100/70 text-base md:text-xl max-w-2xl mx-auto">
+                    <p class="text-teal-100/70 text-sm md:text-xl max-w-2xl mx-auto px-2">
                         Our home ground. Handcrafted itineraries across 5 incredible southern states — temples, beaches, hills & more.
                     </p>
                 </div>
@@ -421,7 +421,7 @@
         <!-- ============================================================ -->
         <!-- INDIAN TOUR PACKAGES SECTION -->
         <!-- ============================================================ -->
-        <section class="py-20 md:py-32 bg-gradient-to-b from-orange-50/50 to-white" id="indian-trips">
+        <section class="py-16 md:py-32 bg-gradient-to-b from-orange-50/50 to-white" id="indian-trips">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
 
                 <!-- Section Header -->
@@ -441,7 +441,7 @@
                 </div>
 
                 <!-- Popular Destinations Quick Links -->
-                <div class="grid grid-cols-4 md:grid-cols-7 gap-3 mb-12">
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3 mb-10 md:mb-12">
                     <div class="col-span-4 md:col-span-7">
                         <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-3">Popular Indian Destinations</p>
                     </div>
