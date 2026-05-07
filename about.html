@@ -94,7 +94,10 @@
         .text-gradient { background: linear-gradient(135deg, #005454 0%, #753b00 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        .editorial-grid { display: grid; grid-template-columns: repeat(12, 1fr); }
+        .editorial-grid { display: grid; grid-template-columns: 1fr; }
+        @media (min-width: 1024px) {
+            .editorial-grid { grid-template-columns: repeat(12, 1fr); }
+        }
         .floating { animation: floating 3s ease-in-out infinite; }
         @keyframes floating { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
         .mask-blob { mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF0066' d='M44.7,-76.4C58.2,-69.2,70,-59.1,79.6,-46.5C89.1,-33.9,96.5,-18.8,98.2,-3.3C99.8,12.3,95.7,28.3,87.6,42.5C79.5,56.7,67.4,69.1,53,77.5C38.6,85.9,21.9,90.4,4.8,82.1C-12.3,73.8,-29.9,52.8,-45.5,38.3C-61.1,23.8,-74.8,15.8,-82.1,3.4C-89.4,-9.1,-90.4,-25.9,-83.4,-40.1C-76.3,-54.3,-61.2,-65.9,-46,-72.4C-30.8,-78.9,-15.4,-80.3,-0.1,-80.1C15.2,-79.9,31.2,-83.6,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E"); mask-size: contain; mask-repeat: no-repeat; mask-position: center; }
@@ -147,7 +150,7 @@
             <div class="max-w-7xl mx-auto w-full editorial-grid gap-8 items-center">
                 <div class="col-span-12 lg:col-span-7 z-10">
                     <span class="inline-block px-4 py-1 bg-primary/5 text-primary text-[10px] font-black uppercase tracking-[0.3em] rounded-full mb-6 reveal">A Legacy in Motion</span>
-                    <h1 class="font-display text-6xl md:text-8xl lg:text-[10rem] font-black text-dark leading-[0.9] mb-8 reveal" style="transition-delay: 200ms">
+                    <h1 class="font-display text-4xl md:text-8xl lg:text-[10rem] font-black text-dark leading-[0.9] mb-8 reveal" style="transition-delay: 200ms">
                         Beyond <br/> <span class="text-gradient">Travel.</span>
                     </h1>
                     <p class="text-lg md:text-2xl text-dark/60 max-w-xl leading-relaxed reveal" style="transition-delay: 400ms">
@@ -309,15 +312,15 @@
 
         <!-- Founder's Note (Editorial Layout) -->
         <section class="py-20 md:py-32 overflow-hidden bg-teal-50/30">
-            <div class="max-w-7xl mx-auto px-6 editorial-grid gap-10 md:gap-16 items-center">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 editorial-grid gap-10 md:gap-16 items-center overflow-hidden">
                 <!-- Text Content First on Mobile -->
-                <div class="col-span-12 lg:col-span-7 order-1 lg:order-2 reveal">
-                    <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                <div class="col-span-12 lg:col-span-7 order-1 lg:order-2 reveal w-full">
+                    <div class="flex flex-col items-center lg:items-start text-center lg:text-left w-full">
                         <span class="material-symbols-outlined text-5xl md:text-6xl text-primary/20 mb-6 md:mb-8">format_quote</span>
-                        <h2 class="font-display text-3xl md:text-5xl font-black mb-6 md:mb-8 italic tracking-tight leading-tight">
+                        <h2 class="font-display text-2xl md:text-5xl font-black mb-6 md:mb-8 italic tracking-tight leading-tight break-words">
                             "We don't sell miles; <br class="hidden md:block"/> we sell the peace of mind <br class="hidden md:block"/> to enjoy them."
                         </h2>
-                        <div class="space-y-4 md:space-y-6 text-dark/60 text-base md:text-lg">
+                        <div class="space-y-4 md:space-y-6 text-dark/60 text-base md:text-lg max-w-prose mx-auto lg:mx-0">
                             <p>When I founded Drive In Holidays, I wanted to build something I would personally trust with my parents' pilgrimage. That's the baseline of everything we do. Whether it's a premium SUV for a business meet or a bus for a wedding party, the quality never wavers.</p>
                             <p>We are a local brand with a global vision. Thank you for being part of our story.</p>
                         </div>
@@ -328,8 +331,8 @@
                     </div>
                 </div>
                 <!-- Image Content -->
-                <div class="col-span-12 lg:col-span-5 order-2 lg:order-1 reveal mt-12 lg:mt-0">
-                    <div class="relative max-w-sm mx-auto lg:max-w-none">
+                <div class="col-span-12 lg:col-span-5 order-2 lg:order-1 reveal mt-12 lg:mt-0 w-full">
+                    <div class="relative max-w-[280px] sm:max-w-sm mx-auto lg:max-w-none">
                         <div class="absolute -top-6 -left-6 md:-top-10 md:-left-10 w-24 h-24 md:w-40 md:h-40 bg-accent/20 rounded-full blur-3xl"></div>
                         <div class="relative z-10 mask-blob overflow-hidden aspect-square bg-dark group shadow-2xl">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110" alt="Founder" />
