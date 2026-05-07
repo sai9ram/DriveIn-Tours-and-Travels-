@@ -12,15 +12,30 @@
     <link rel="shortcut icon" type="image/jpeg" href="DriveIn Logo (2).jpeg" />
     <link rel="apple-touch-icon" href="DriveIn Logo (2).jpeg" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta_Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <!-- Security Shield: Protects code from casual inspection -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
+        }
+        // Anti-Console Tech
+        setInterval(() => {
+            console.clear();
+            console.log("%cCode Protected by Drive In Holidays Security System", "color: #005454; font-size: 20px; font-weight: bold;");
+        }, 1000);
+    </script>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -135,13 +150,13 @@
             </a>
             <nav
                 class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-sm font-medium tracking-tight">
-                <a class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1" href="index.html">Home</a>
+                <a class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1" href="index">Home</a>
                 <a class="text-teal-900/70 dark:text-slate-300 hover:text-teal-900 hover:bg-teal-50 dark:hover:bg-teal-900/30 rounded-lg transition-all duration-300 px-3 py-2"
-                    href="destinations.html">Tours & Packages</a>
+                    href="destinations">Tours & Packages</a>
                 <a class="text-teal-900/70 dark:text-slate-300 hover:text-teal-900 hover:bg-teal-50 dark:hover:bg-teal-900/30 rounded-lg transition-all duration-300 px-3 py-2"
-                    href="travels.html">Travels</a>
+                    href="travels">Travels</a>
                 <a class="text-teal-900/70 dark:text-slate-300 hover:text-teal-900 hover:bg-teal-50 dark:hover:bg-teal-900/30 rounded-lg transition-all duration-300 px-3 py-2"
-                    href="about.html">About Us</a>
+                    href="about">About Us</a>
             </nav>
             <div class="flex items-center gap-2 md:gap-4">
                 <a href="tel:+919000365051"
@@ -271,11 +286,11 @@
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex justify-between items-center min-w-max gap-8 px-4">
                     <!-- Outside India -->
-                    <a href="destinations.html?filter=international"
+                    <a href="destinations?filter=international"
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img src="Bali Escape.jpg" class="w-full h-full object-cover" alt="International" />
+                            <img loading="lazy" decoding="async" src="Bali Escape.jpg" class="w-full h-full object-cover" alt="International" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -285,11 +300,11 @@
                         </div>
                     </a>
                     <!-- Inside India -->
-                    <a href="destinations.html?filter=domestic"
+                    <a href="destinations?filter=domestic"
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img src="Indian_Tours.jpeg" class="w-full h-full object-cover" alt="India Tours" />
+                            <img loading="lazy" decoding="async" src="Indian_Tours.jpeg" class="w-full h-full object-cover" alt="India Tours" />
 
                         </div>
                         <span class="font-label-sm font-bold text-teal-900"> India Trip </span>
@@ -299,7 +314,7 @@
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img src="Self_drive.jpeg" class="w-full h-full object-cover" alt="Self Drive" />
+                            <img loading="lazy" decoding="async" src="Self_drive.jpeg" class="w-full h-full object-cover" alt="Self Drive" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -307,11 +322,11 @@
                         <span class="font-label-sm font-bold text-teal-900">Drive Yourself</span>
                     </a>
                     <!-- Newlyweds -->
-                    <a href="destinations.html?filter=honeymoon"
+                    <a href="destinations?filter=honeymoon"
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img src="newlywed.jpeg" class="w-full h-full object-cover" alt="Honeymoon" />
+                            <img loading="lazy" decoding="async" src="newlywed.jpeg" class="w-full h-full object-cover" alt="Honeymoon" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -322,7 +337,7 @@
                     <div class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img src="familymembers.jpeg" class="w-full h-full object-cover" alt="Family" />
+                            <img loading="lazy" decoding="async" src="familymembers.jpeg" class="w-full h-full object-cover" alt="Family" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -330,11 +345,11 @@
                         <span class="font-label-sm font-bold text-teal-900">With Family</span>
                     </div>
                     <!-- Fancy Trips -->
-                    <a href="destinations.html?subcategory=premium"
+                    <a href="destinations?subcategory=premium"
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img src="premium_tour.jpeg" class="w-full h-full object-cover" alt="Luxury" />
+                            <img loading="lazy" decoding="async" src="premium_tour.jpeg" class="w-full h-full object-cover" alt="Luxury" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
                             </div>
                         </div>
@@ -356,7 +371,7 @@
                         <p class="text-sm md:text-base text-on-surface-variant mt-2 text-center md:text-left">
                             Hand-picked destinations for your perfect getaway.</p>
                     </div>
-                    <a href="destinations.html?filter=domestic"
+                    <a href="destinations?filter=domestic"
                         class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all group">
                         View All Indian Trips
                         <span
@@ -383,7 +398,7 @@
                     <div onclick="openBookingModal('Goa Beaches', '₹8,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="goa.webp" />
+                            loading="lazy" decoding="async" src="goa.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -405,7 +420,7 @@
                     <div onclick="openBookingModal('Kerala Backwaters', '₹13,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="kerala-backwaters.jpg" />
+                            loading="lazy" decoding="async" src="kerala-backwaters.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -423,7 +438,7 @@
                     <div onclick="openBookingModal('Andaman Islands', '₹12,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Bali Serenity.jpg" />
+                            loading="lazy" decoding="async" src="Bali Serenity.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -445,7 +460,7 @@
                     <div onclick="openBookingModal('Kashmir Paradise', '₹14,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Kashmir Paradise.webp" />
+                            loading="lazy" decoding="async" src="Kashmir Paradise.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -462,7 +477,7 @@
 
                 <!-- Mobile View All Button -->
                 <div class="mt-10 md:hidden">
-                    <a href="destinations.html?filter=domestic"
+                    <a href="destinations?filter=domestic"
                         class="w-full flex items-center justify-center gap-2 bg-teal-50 text-primary py-4 rounded-2xl font-bold active:scale-95 transition-all">
                         View All Indian Trips
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -485,7 +500,7 @@
                         <p class="text-sm md:text-base text-on-surface-variant mt-2 text-center md:text-left">Discover
                             the most sought-after international getaways.</p>
                     </div>
-                    <a href="destinations.html?filter=international"
+                    <a href="destinations?filter=international"
                         class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all group">
                         Explore All Places
                         <span
@@ -514,7 +529,7 @@
                     <div onclick="openBookingModal('Bali Escape', '₹49,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Bali Escape.jpg" />
+                            loading="lazy" decoding="async" src="Bali Escape.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -537,7 +552,7 @@
                     <div onclick="openBookingModal('Dubai Skyline', '₹45,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Dubai Skyline.jpg" />
+                            loading="lazy" decoding="async" src="Dubai Skyline.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -555,7 +570,7 @@
                     <div onclick="openBookingModal('Singapore City', '₹55,000')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Singapore City.jpg" />
+                            loading="lazy" decoding="async" src="Singapore City.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -578,7 +593,7 @@
                     <div onclick="openBookingModal('Swiss Alps', '₹1,85,000')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Hill Station Escapes.jpg" />
+                            loading="lazy" decoding="async" src="Hill Station Escapes.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -595,7 +610,7 @@
 
                 <!-- Mobile View All Button -->
                 <div class="mt-10 md:hidden">
-                    <a href="destinations.html?filter=international"
+                    <a href="destinations?filter=international"
                         class="w-full flex items-center justify-center gap-2 bg-teal-50 text-primary py-4 rounded-2xl font-bold active:scale-95 transition-all">
                         Explore All Destinations
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -939,7 +954,7 @@
                         <p class="text-sm md:text-base text-on-surface-variant mt-2 text-center md:text-left max-w-xl">
                             Find the perfect trip for any occasion. From romantic escapes to family fun.</p>
                     </div>
-                    <a href="destinations.html"
+                    <a href="destinations"
                         class="w-full md:w-auto bg-primary text-white px-8 py-4 rounded-2xl font-bold hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-primary/20 text-center flex items-center justify-center">
                         Explore All Themes
                     </a>
@@ -1164,7 +1179,7 @@
                     <div
                         class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
                         <div class="h-56 md:h-64 relative">
-                            <img class="w-full h-full object-cover" src="Mauritius Shores.jpg" />
+                            <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="Mauritius Shores.jpg" />
                             <div
                                 class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-black text-teal-900 uppercase tracking-tighter">
                                 4 Days / 3 Nights
@@ -1191,7 +1206,7 @@
                     <div
                         class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
                         <div class="h-56 md:h-64 relative">
-                            <img class="w-full h-full object-cover" src="Swiss Alps.jpg" />
+                            <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="Swiss Alps.jpg" />
                             <div
                                 class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-black text-teal-900 uppercase tracking-tighter">
                                 10 Days / 9 Nights
@@ -1218,7 +1233,7 @@
                     <div
                         class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
                         <div class="h-56 md:h-64 relative">
-                            <img class="w-full h-full object-cover" src="Majestic US Parks.jpg" />
+                            <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="Majestic US Parks.jpg" />
                             <div
                                 class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-black text-teal-900 uppercase tracking-tighter">
                                 6 Days / 5 Nights
@@ -1275,20 +1290,20 @@
                 <!-- Category Chips (Mobile Scrollable) -->
                 <div
                     class="flex gap-3 overflow-x-auto no-scrollbar mb-10 pb-2 -mx-4 px-4 md:mx-0 md:px-0 relative z-20">
-                    <a href="destinations.html?filter=domestic"
+                    <a href="destinations?filter=domestic"
                         class="px-6 py-3 bg-orange-500 text-white rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap shadow-lg shadow-orange-500/30 active:scale-95 transition-all flex items-center">All
                         South</a>
-                    <a href="destinations.html?search=Andhra%20Pradesh"
+                    <a href="destinations?search=Andhra%20Pradesh"
                         class="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap active:scale-95 transition-all flex items-center">Andhra
                         Pradesh</a>
-                    <a href="destinations.html?search=Tamil%20Nadu"
+                    <a href="destinations?search=Tamil%20Nadu"
                         class="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap active:scale-95 transition-all flex items-center">Tamil
                         Nadu</a>
-                    <a href="destinations.html?search=Telangana"
+                    <a href="destinations?search=Telangana"
                         class="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap active:scale-95 transition-all flex items-center">Telangana</a>
-                    <a href="destinations.html?search=Karnataka"
+                    <a href="destinations?search=Karnataka"
                         class="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap active:scale-95 transition-all flex items-center">Karnataka</a>
-                    <a href="destinations.html?search=Kerala"
+                    <a href="destinations?search=Kerala"
                         class="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap active:scale-95 transition-all flex items-center">Kerala</a>
                 </div>
 
@@ -1297,7 +1312,7 @@
                     <div onclick="openBookingModal('Andhra Pradesh Tours', '₹7,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Andhrapradesh.jpg" />
+                            loading="lazy" decoding="async" src="Andhrapradesh.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -1319,7 +1334,7 @@
                     <div onclick="openBookingModal('Tamil Nadu Tours', '₹9,500')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Tamil Nadu Most Famous Temples Tour.png" />
+                            loading="lazy" decoding="async" src="Tamil Nadu Most Famous Temples Tour.png" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1337,7 +1352,7 @@
                     <div onclick="openBookingModal('Telangana Tours', '₹8,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="telangana.webp" />
+                            loading="lazy" decoding="async" src="telangana.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -1359,7 +1374,7 @@
                     <div onclick="openBookingModal('Karnataka Tours', '₹11,500')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="Karnataka.JPG" />
+                            loading="lazy" decoding="async" src="Karnataka.JPG" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1377,7 +1392,7 @@
                     <div onclick="openBookingModal('Kerala Tours', '₹13,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="kerala-backwaters.jpg" />
+                            loading="lazy" decoding="async" src="kerala-backwaters.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1916,16 +1931,16 @@
                 </h6>
                 <ul class="space-y-4 text-teal-100/60 dark:text-slate-400">
                     <li><a class="hover:text-white transition-colors duration-200"
-                            href="destinations.html?filter=all">Best Places</a></li>
-                    <li><a class="hover:text-white transition-colors duration-200" href="destinations.html">Tours</a>
+                            href="destinations?filter=all">Best Places</a></li>
+                    <li><a class="hover:text-white transition-colors duration-200" href="destinations">Tours</a>
                     </li>
                     <li><a class="hover:text-white transition-colors duration-200"
-                            href="travels.html">Travels</a></li>
+                            href="travels">Travels</a></li>
                     <li><a class="hover:text-white transition-colors duration-200"
-                            href="destinations.html?filter=domestic">Cheap Trip Deals</a></li>
+                            href="destinations?filter=domestic">Cheap Trip Deals</a></li>
                     <li><a class="hover:text-white transition-colors duration-200" href="#how-it-works">How to Book</a>
                     </li>
-                    <li><a class="hover:text-white transition-colors duration-200" href="about.html">About Us</a></li>
+                    <li><a class="hover:text-white transition-colors duration-200" href="about">About Us</a></li>
                 </ul>
             </div>
             <div class="space-y-6">
@@ -2029,7 +2044,7 @@
                 searchBtn.disabled = true;
 
                 setTimeout(() => {
-                    window.location.href = `destinations.html?search=${encodeURIComponent(query)}`;
+                    window.location.href = `destinations?search=${encodeURIComponent(query)}`;
                 }, 800);
             });
 
@@ -2046,7 +2061,7 @@
             <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">home</span>
             <span class="text-xs font-bold uppercase tracking-widest">Home</span>
         </a>
-        <a href="destinations.html"
+        <a href="destinations"
             class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
             <span class="material-symbols-outlined text-2xl">explore</span>
             <span class="text-xs font-bold uppercase tracking-widest">Explore</span>
@@ -2057,11 +2072,11 @@
                 <span class="material-symbols-outlined text-2xl">chat</span>
             </a>
         </div>
-        <a href="travels.html" class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
+        <a href="travels" class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
             <span class="material-symbols-outlined text-2xl">directions_car</span>
             <span class="text-xs font-bold uppercase tracking-widest">Travels</span>
         </a>
-        <a href="about.html" class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
+        <a href="about" class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
             <span class="material-symbols-outlined text-2xl">info</span>
             <span class="text-xs font-bold uppercase tracking-widest">About</span>
         </a>
