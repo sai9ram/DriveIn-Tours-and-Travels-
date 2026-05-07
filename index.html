@@ -182,61 +182,60 @@
                 </div>
                 <!-- Smart Search Box -->
                 <div id="search-box"
-                    class="bg-white/95 backdrop-blur-xl p-6 md:p-8 rounded-[24px] md:rounded-[32px] shadow-2xl max-w-5xl border border-white/20 relative mx-4 md:mx-0 -mt-10 md:mt-0">
-                    <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-                        <div class="space-y-2 relative">
-                            <label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">From (Your
+                    class="bg-white/95 backdrop-blur-xl p-4 md:p-8 rounded-2xl md:rounded-[32px] shadow-2xl max-w-5xl border border-white/20 relative mx-2 md:mx-0 -mt-10 md:mt-0">
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
+                        <div class="space-y-1 md:space-y-2 relative">
+                            <label class="text-[10px] md:text-xs font-bold uppercase tracking-wider text-on-surface-variant">From (Your
                                 City)</label>
                             <div
-                                class="flex items-center gap-2 bg-surface-container-low p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
-                                <span class="material-symbols-outlined text-teal-600">location_on</span>
+                                class="flex items-center gap-2 bg-surface-container-low p-2.5 md:p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-teal-600 text-lg md:text-xl">location_on</span>
                                 <input id="search-from"
-                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface"
-                                    placeholder="Which city are you in?" type="text" />
+                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface text-sm md:text-base"
+                                    placeholder="Which city?" type="text" />
                             </div>
                         </div>
-                        <div class="space-y-2 relative">
-                            <label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">To (Where
+                        <div class="space-y-1 md:space-y-2 relative">
+                            <label class="text-[10px] md:text-xs font-bold uppercase tracking-wider text-on-surface-variant">To (Where
                                 to go?)</label>
                             <div
-                                class="flex items-center gap-2 bg-surface-container-low p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
-                                <span class="material-symbols-outlined text-teal-600">map</span>
+                                class="flex items-center gap-2 bg-surface-container-low p-2.5 md:p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-teal-600 text-lg md:text-xl">map</span>
                                 <input id="search-to"
-                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface"
-                                    placeholder="Where do you want to go?" type="text" />
+                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface text-sm md:text-base"
+                                    placeholder="Where to go?" type="text" />
                             </div>
                             <div id="destination-suggestions"
                                 class="hidden absolute top-full left-0 right-0 bg-white shadow-2xl rounded-xl mt-2 z-50 border border-teal-50 overflow-hidden">
                                 <!-- Suggestions will appear here -->
                             </div>
                         </div>
-                        <div class="space-y-2">
+                        <div class="space-y-1 md:space-y-2">
                             <label
-                                class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">When?</label>
+                                class="text-[10px] md:text-xs font-bold uppercase tracking-wider text-on-surface-variant">When?</label>
                             <div
-                                class="flex items-center gap-2 bg-surface-container-low p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
-                                <span class="material-symbols-outlined text-teal-600">calendar_month</span>
+                                class="flex items-center gap-2 bg-surface-container-low p-2.5 md:p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-teal-600 text-lg md:text-xl">calendar_month</span>
                                 <input id="search-date"
-                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface cursor-pointer"
-                                    placeholder="Pick a date" type="date" />
+                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface cursor-pointer text-sm md:text-base"
+                                    placeholder="Pick date" type="date" />
                             </div>
                         </div>
-                        <div class="space-y-2">
-                            <label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Budget
-                                (Money)</label>
+                        <div class="space-y-1 md:space-y-2">
+                            <label class="text-[10px] md:text-xs font-bold uppercase tracking-wider text-on-surface-variant">Budget</label>
                             <div
-                                class="flex items-center gap-2 bg-surface-container-low p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
-                                <span class="material-symbols-outlined text-teal-600">payments</span>
+                                class="flex items-center gap-2 bg-surface-container-low p-2.5 md:p-3 rounded-xl border border-outline-variant focus-within:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-teal-600 text-lg md:text-xl">payments</span>
                                 <input id="search-budget"
-                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface"
-                                    placeholder="How much can you spend?" type="text" />
+                                    class="bg-transparent border-none p-0 focus:ring-0 w-full text-on-surface text-sm md:text-base"
+                                    placeholder="Spend limit?" type="text" />
                             </div>
                         </div>
-                        <div class="flex items-end">
+                        <div class="flex items-end mt-2 md:mt-0">
                             <button id="search-btn"
-                                class="w-full bg-tertiary-container text-on-tertiary-container py-3 md:py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-tertiary-container/30">
+                                class="w-full bg-tertiary-container text-on-tertiary-container py-3 md:py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-tertiary-container/30 text-sm md:text-base">
                                 <span id="btn-text">Show Best Trips</span>
-                                <span id="btn-icon" class="material-symbols-outlined">trending_flat</span>
+                                <span id="btn-icon" class="material-symbols-outlined text-lg md:text-xl">trending_flat</span>
                                 <div id="btn-loader"
                                     class="hidden animate-spin rounded-full h-5 w-5 border-2 border-white/30 border-t-white">
                                 </div>
