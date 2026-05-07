@@ -205,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="destinations-grid">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8" id="destinations-grid">
                     <!-- Dynamic Content -->
                 </div>
                 
@@ -525,7 +525,7 @@
                 </div>
 
                 <!-- Indian Packages Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="indian-packages-grid">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6" id="indian-packages-grid">
                     <!-- Dynamically rendered -->
                 </div>
 
@@ -1218,31 +1218,31 @@
                     noResults.classList.add('hidden');
                     filtered.forEach((d, index) => {
                         const card = document.createElement('div');
-                        card.className = 'group relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-xl active:scale-95 transition-all duration-500 fade-in';
+                        card.className = 'group relative aspect-[4/5] rounded-3xl md:rounded-[40px] overflow-hidden shadow-xl active:scale-95 transition-all duration-500 fade-in';
                         card.style.animationDelay = `${index * 50}ms`;
                         
-                        const tagsHtml = d.tags.map(tag => {
+                        const tagsHtml = d.tags.slice(0, 1).map(tag => {
                             const colors = tag === 'Hot' ? 'bg-orange-500 text-white' : 'bg-white/90 backdrop-blur-md text-teal-900';
-                            return `<span class="${colors} text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest">${tag}</span>`;
+                            return `<span class="${colors} text-[9px] md:text-xs font-black px-2 md:px-3 py-1 rounded-full uppercase tracking-widest">${tag}</span>`;
                         }).join('');
 
                         card.innerHTML = `
                             <img src="${d.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="${d.name}" />
                             <div class="absolute inset-0 destination-card-gradient"></div>
-                            <div class="absolute top-6 left-6 flex gap-2">
+                            <div class="absolute top-4 left-4 md:top-6 md:left-6 flex gap-2">
                                 ${tagsHtml}
                             </div>
-                            <div class="absolute bottom-8 left-8 right-8">
-                                <p class="text-orange-400 text-xs font-bold uppercase tracking-widest mb-2">${d.country}</p>
-                                <h3 class="text-white text-3xl font-h2 mb-4">${d.name}</h3>
+                            <div class="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8">
+                                <p class="text-orange-400 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-1 md:mb-2">${d.country}</p>
+                                <h3 class="text-white text-base md:text-3xl font-h2 mb-2 md:mb-4 leading-tight line-clamp-2">${d.name}</h3>
                                 <div class="flex items-center justify-between text-white/90">
-                                    <div class="flex items-center gap-2">
-                                        <span class="material-symbols-outlined text-lg">schedule</span>
-                                        <span class="text-sm">${d.duration}</span>
+                                    <div class="flex items-center gap-1.5 md:gap-2">
+                                        <span class="material-symbols-outlined text-sm md:text-lg">schedule</span>
+                                        <span class="text-[10px] md:text-sm">${d.duration}</span>
                                     </div>
                                     <button onclick="event.stopPropagation(); openBookingModal('${d.name}', '${d.price}')" 
-                                        class="bg-orange-400 text-teal-950 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white transition-all">
-                                        Book Now
+                                        class="bg-orange-400 text-teal-950 px-2.5 py-1 md:px-4 md:py-1.5 rounded-full text-[9px] md:text-xs font-bold uppercase tracking-widest hover:bg-white transition-all">
+                                        Book
                                     </button>
                                 </div>
                             </div>
@@ -1337,24 +1337,24 @@
                     card.className = 'group bg-white rounded-3xl overflow-hidden shadow-sm border border-teal-50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 fade-in flex flex-col';
                     card.style.animationDelay = i * 40 + 'ms';
 
-                    const tagsHtml = (d.tags || []).slice(0, 2).map(tag =>
-                        '<span class="text-xs font-black uppercase tracking-wider bg-teal-50 text-teal-700 px-2 py-0.5 rounded-full">' + tag + '</span>'
+                    const tagsHtml = (d.tags || []).slice(0, 1).map(tag =>
+                        '<span class="text-[9px] md:text-xs font-black uppercase tracking-wider bg-teal-50 text-teal-700 px-1.5 md:px-2 py-0.5 rounded-full">' + tag + '</span>'
                     ).join('');
 
                     card.innerHTML =
-                        '<div class="relative aspect-[16/10] overflow-hidden">' +
+                        '<div class="relative aspect-square md:aspect-[16/10] overflow-hidden">' +
                             '<img src="' + d.image + '" alt="' + d.name + '" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />' +
                             '<div class="absolute inset-0 bg-gradient-to-t from-teal-950/70 via-transparent to-transparent"></div>' +
-                            '<span class="' + meta.color + ' absolute top-4 left-4 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">' + meta.icon + ' ' + meta.label + '</span>' +
-                            '<span class="absolute bottom-4 right-4 bg-white/95 text-teal-900 text-base font-black px-4 py-1.5 rounded-full shadow-lg">' + d.price + '</span>' +
+                            '<span class="' + meta.color + ' absolute top-3 left-3 md:top-4 md:left-4 text-[9px] md:text-xs font-black px-2 md:px-3 py-0.5 md:py-1 rounded-full uppercase tracking-wider shadow-lg">' + meta.icon + ' ' + meta.label + '</span>' +
+                            '<span class="absolute bottom-3 right-3 md:bottom-4 md:right-4 bg-white/95 text-teal-900 text-xs md:text-base font-black px-2 md:px-4 py-1 md:py-1.5 rounded-full shadow-lg">' + d.price + '</span>' +
                         '</div>' +
-                        '<div class="p-5 flex flex-col flex-1">' +
-                            '<p class="text-orange-500 text-xs font-bold uppercase tracking-widest mb-1">India · ' + d.duration + '</p>' +
-                            '<h3 class="font-h2 text-on-surface text-base md:text-lg leading-snug mb-3 flex-1">' + d.name + '</h3>' +
-                            '<div class="flex items-center justify-between mt-auto pt-3 border-t border-teal-50">' +
-                                '<div class="flex gap-1.5 flex-wrap">' + tagsHtml + '</div>' +
-                                '<button onclick="openBookingModal(\'' + d.name.replace(/'/g, "\\'") + '\', \'' + d.price + '\')" class="flex items-center gap-1.5 text-[11px] font-bold text-primary hover:text-orange-500 transition-colors whitespace-nowrap group">' +
-                                    'Book Now <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>' +
+                        '<div class="p-3 md:p-5 flex flex-col flex-1">' +
+                            '<p class="text-orange-500 text-[9px] md:text-xs font-bold uppercase tracking-widest mb-1">India · ' + d.duration + '</p>' +
+                            '<h3 class="font-h2 text-on-surface text-sm md:text-lg leading-snug mb-3 flex-1 line-clamp-2">' + d.name + '</h3>' +
+                            '<div class="flex items-center justify-between mt-auto pt-2 md:pt-3 border-t border-teal-50">' +
+                                '<div class="flex gap-1 flex-wrap">' + tagsHtml + '</div>' +
+                                '<button onclick="openBookingModal(\'' + d.name.replace(/'/g, "\\'") + '\', \'' + d.price + '\')" class="flex items-center gap-1 text-[10px] font-bold text-primary hover:text-orange-500 transition-colors whitespace-nowrap group">' +
+                                    'Book <span class="material-symbols-outlined text-[10px] md:text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>' +
                                 '</button>' +
                             '</div>' +
                         '</div>';
