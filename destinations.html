@@ -175,17 +175,17 @@
         <!-- Search & Filter Section -->
         <section class="relative -mt-8 md:-mt-10 z-10 px-4">
             <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-[32px] shadow-2xl p-5 md:p-8 border border-teal-50">
-                <div class="flex flex-col md:flex-row gap-4 items-center">
-                    <div class="flex-1 w-full relative">
+                <div class="flex flex-col md:flex-row gap-5 items-stretch md:items-center">
+                    <div class="w-full md:flex-1 relative">
                         <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-teal-600">search</span>
-                        <input type="text" id="destination-search" placeholder="Search for a country, city..." class="w-full pl-11 pr-4 py-3.5 md:py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary/20 text-on-surface text-sm" />
+                        <input type="text" id="destination-search" placeholder="Search for a country, city..." class="w-full pl-11 pr-4 py-4 bg-teal-50/50 border-none rounded-2xl focus:ring-2 focus:ring-primary/20 text-on-surface text-sm" />
                     </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-1 md:pb-0" id="filter-container">
-                        <button data-filter="all" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-primary text-white rounded-xl md:rounded-2xl font-bold whitespace-nowrap active:scale-95 transition-all text-sm">All</button>
-                        <button data-filter="international" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">International</button>
-                        <button data-filter="domestic" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Domestic</button>
-                        <button data-filter="tirupati" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Tirupati Special</button>
-                        <button data-filter="honeymoon" class="filter-btn px-5 py-3 md:px-6 md:py-4 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Honeymoon</button>
+                    <div class="w-full flex gap-2 overflow-x-auto no-scrollbar py-1 px-1" id="filter-container">
+                        <button data-filter="all" class="filter-btn flex-shrink-0 px-6 py-3.5 bg-primary text-white rounded-xl md:rounded-2xl font-bold whitespace-nowrap active:scale-95 transition-all text-sm shadow-lg shadow-primary/20">All</button>
+                        <button data-filter="international" class="filter-btn flex-shrink-0 px-6 py-3.5 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">International</button>
+                        <button data-filter="domestic" class="filter-btn flex-shrink-0 px-6 py-3.5 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Domestic</button>
+                        <button data-filter="tirupati" class="filter-btn flex-shrink-0 px-6 py-3.5 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Tirupati Special</button>
+                        <button data-filter="honeymoon" class="filter-btn flex-shrink-0 px-6 py-3.5 bg-teal-50 text-teal-900 rounded-xl md:rounded-2xl font-bold whitespace-nowrap hover:bg-teal-100 active:scale-95 transition-all text-sm">Honeymoon</button>
                     </div>
                 </div>
             </div>
