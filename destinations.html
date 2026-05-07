@@ -137,11 +137,11 @@
     </style>
 </head>
 
-<body class="bg-background font-body-md text-on-background antialiased pb-24 md:pb-0">
+<body class="bg-surface text-on-surface font-['Inter'] m-0 p-0 overflow-x-hidden">
     <!-- TopNavBar -->
     <header
         class="sticky top-0 w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border-b border-teal-50/50 dark:border-slate-800 shadow-sm">
-        <div class="max-w-7xl mx-auto px-0 md:px-6 h-16 md:h-20 flex justify-between items-center">
+        <div class="w-full max-w-7xl mx-auto px-3 md:px-6 h-16 md:h-20 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
                 <img loading="lazy" decoding="async" src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-16 md:h-24 w-auto object-contain"
                     style="max-height:96px;" />
@@ -184,15 +184,15 @@
                     alt="Travel Destinations" />
                 <div class="absolute inset-0 bg-teal-950/60 backdrop-blur-[2px]"></div>
             </div>
-            <div class="relative max-w-7xl mx-auto px-4 md:px-6 text-center">
+            <div class="relative w-full px-4 md:px-6 text-center">
                 <h1 class="font-h1 text-white text-4xl md:text-7xl mb-4 leading-tight">Explore the <span class="text-orange-400">World</span></h1>
                 <p class="font-body-lg text-teal-50/90 text-base md:text-xl max-w-2xl mx-auto">From tropical beaches to snow-capped mountains, discover your next adventure with Drive In Holidays.</p>
             </div>
         </section>
 
         <!-- Search & Filter Section -->
-        <section class="relative -mt-10 z-10 px-4">
-            <div class="max-w-5xl mx-auto bg-white rounded-[32px] shadow-2xl p-6 md:p-8 border border-teal-50">
+        <section class="relative -mt-10 z-10 px-0">
+            <div class="w-full max-w-5xl mx-auto bg-white rounded-none md:rounded-[32px] shadow-2xl p-4 md:p-8 border-y md:border border-teal-50">
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div class="flex-1 w-full relative">
                         <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-teal-600">search</span>
@@ -211,7 +211,7 @@
 
         <!-- Global Destinations -->
         <section class="py-12 md:py-32">
-            <div class="max-w-7xl mx-auto px-0 md:px-6">
+            <div class="w-full max-w-7xl mx-auto px-3 md:px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                     <div>
                         <span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-2 block" id="section-subtitle">World Explorer</span>
@@ -223,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8" id="destinations-grid">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 px-2 md:px-0" id="destinations-grid">
                     <!-- Dynamic Content -->
                 </div>
                 
@@ -440,7 +440,7 @@
         <!-- INDIAN TOUR PACKAGES SECTION -->
         <!-- ============================================================ -->
         <section class="py-20 md:py-32 bg-gradient-to-b from-orange-50/50 to-white" id="indian-trips">
-            <div class="max-w-7xl mx-auto px-0 md:px-6">
+            <div class="w-full max-w-7xl mx-auto px-3 md:px-6">
 
                 <!-- Section Header -->
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-14 gap-6">
@@ -543,7 +543,7 @@
                 </div>
 
                 <!-- Indian Packages Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6" id="indian-packages-grid">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 px-2 md:px-0" id="indian-packages-grid">
                     <!-- Dynamically rendered -->
                 </div>
 
@@ -1236,7 +1236,7 @@
                     noResults.classList.add('hidden');
                     filtered.forEach((d, index) => {
                         const card = document.createElement('div');
-                        card.className = 'group relative aspect-[4/5] rounded-2xl md:rounded-[40px] overflow-hidden shadow-xl active:scale-95 transition-all duration-500 fade-in';
+                        card.className = 'group relative aspect-[4/5] rounded-xl md:rounded-[40px] overflow-hidden shadow-md md:shadow-xl active:scale-95 transition-all duration-500 fade-in';
                         card.style.animationDelay = `${index * 50}ms`;
                         
                         const tagsHtml = d.tags.map(tag => {
@@ -1247,7 +1247,7 @@
                         card.innerHTML = `
                             <img loading="lazy" decoding="async" src="${d.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="${d.name}" />
                             <div class="absolute inset-0 destination-card-gradient"></div>
-                            <div class="absolute top-2 left-2 md:top-6 md:left-6 flex gap-1 md:gap-2">
+                            <div class="absolute top-2 left-2 md:top-6 md:left-6 flex flex-wrap gap-1 md:gap-2">
                                 ${tagsHtml}
                             </div>
                             <div class="absolute bottom-3 left-2 right-2 md:bottom-8 md:left-8 md:right-8">
@@ -1476,7 +1476,7 @@
     </script>
     <!-- Bottom Nav (Mobile) -->
     <div
-        class="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-t border-teal-50 z-[100] px-8 py-3 pb-6 flex justify-between items-center shadow-[0_-8px_30px_rgb(0,0,0,0.06)]">
+        class="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-t border-teal-50 z-[100] px-4 py-3 pb-6 flex justify-between items-center shadow-[0_-8px_30px_rgb(0,0,0,0.06)]">
         <a href="index.html" class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
             <span class="material-symbols-outlined text-2xl">home</span>
             <span class="text-xs font-bold uppercase tracking-widest">Home</span>
