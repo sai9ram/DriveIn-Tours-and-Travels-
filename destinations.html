@@ -11,30 +11,12 @@
     <link rel="shortcut icon" type="image/jpeg" href="DriveIn Logo (2).jpeg" />
     <link rel="apple-touch-icon" href="DriveIn Logo (2).jpeg" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta_Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <!-- Security Shield -->
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-            if(e.keyCode == 123) return false;
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
-            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
-        };
-        // Anti-Console Tech
-        setInterval(() => {
-            console.clear();
-            console.log("%cCode Protected by Drive In Holidays Security System", "color: #005454; font-size: 20px; font-weight: bold;");
-        }, 1000);
-    </script>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -137,13 +119,13 @@
     </style>
 </head>
 
-<body class="bg-surface text-on-surface font-['Inter'] m-0 p-0 overflow-x-hidden">
+<body class="bg-background font-body-md text-on-background antialiased pb-24 md:pb-0">
     <!-- TopNavBar -->
     <header
         class="sticky top-0 w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border-b border-teal-50/50 dark:border-slate-800 shadow-sm">
-        <div class="w-full max-w-7xl mx-auto px-0 md:px-6 h-16 md:h-20 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
-                <img loading="lazy" decoding="async" src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-16 md:h-24 w-auto object-contain"
+                <img src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-16 md:h-24 w-auto object-contain"
                     style="max-height:96px;" />
             </a>
             <nav
@@ -177,22 +159,22 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="relative h-[500px] md:h-[500px] w-full overflow-hidden flex items-center justify-center">
+        <section class="relative h-[400px] md:h-[500px] w-full overflow-hidden flex items-center justify-center">
             <div class="absolute inset-0">
                 <img class="w-full h-full object-cover"
                     src="Hill Station Escapes.jpg"
                     alt="Travel Destinations" />
                 <div class="absolute inset-0 bg-teal-950/60 backdrop-blur-[2px]"></div>
             </div>
-            <div class="relative w-full px-4 md:px-6 text-center">
-                <h1 class="font-h1 text-white text-5xl md:text-7xl mb-4 leading-tight">Explore the <br/><span class="text-orange-400">World</span></h1>
-                <p class="font-body-lg text-teal-50/90 text-sm md:text-xl w-full md:max-w-2xl mx-auto px-4 md:px-0">From tropical beaches to snow-capped mountains, discover your next adventure with Drive In Holidays.</p>
+            <div class="relative max-w-7xl mx-auto px-4 md:px-6 text-center">
+                <h1 class="font-h1 text-white text-4xl md:text-7xl mb-4 leading-tight">Explore the <span class="text-orange-400">World</span></h1>
+                <p class="font-body-lg text-teal-50/90 text-base md:text-xl max-w-2xl mx-auto">From tropical beaches to snow-capped mountains, discover your next adventure with Drive In Holidays.</p>
             </div>
         </section>
 
         <!-- Search & Filter Section -->
-        <section class="relative -mt-10 z-10 px-0">
-            <div class="w-full max-w-5xl mx-auto bg-white rounded-none md:rounded-[32px] shadow-2xl p-0 md:p-8 border-y md:border border-teal-50">
+        <section class="relative -mt-10 z-10 px-4">
+            <div class="max-w-5xl mx-auto bg-white rounded-[32px] shadow-2xl p-6 md:p-8 border border-teal-50">
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div class="flex-1 w-full relative">
                         <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-teal-600">search</span>
@@ -210,9 +192,9 @@
         </section>
 
         <!-- Global Destinations -->
-        <section class="py-12 md:py-32">
-            <div class="w-full max-w-7xl mx-auto px-0 md:px-6">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-6 px-1 md:px-0">
+        <section class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                     <div>
                         <span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-2 block" id="section-subtitle">World Explorer</span>
                         <h2 class="text-3xl md:text-5xl font-h2 text-on-surface" id="section-title">International Wonders</h2>
@@ -223,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-8 px-0 md:px-0" id="destinations-grid">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="destinations-grid">
                     <!-- Dynamic Content -->
                 </div>
                 
@@ -246,10 +228,10 @@
             <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
             <div class="absolute bottom-0 left-0 w-96 h-96 bg-teal-400/10 rounded-full -ml-48 -mb-48 blur-3xl"></div>
 
-            <div class="relative max-w-7xl mx-auto px-2 md:px-6">
+            <div class="relative max-w-7xl mx-auto px-4 md:px-6">
 
                 <!-- Section Header -->
-                <div class="text-center mb-10 md:mb-14">
+                <div class="text-center mb-14">
                     <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-400/30 text-orange-300 text-xs font-black uppercase tracking-[0.3em] px-5 py-2 rounded-full mb-5">
                         <span class="material-symbols-outlined text-sm">stars</span>
                         DriveIn Special
@@ -263,13 +245,13 @@
                 </div>
 
                 <!-- State Cards — Horizontal Scroll on Mobile, Grid on Desktop -->
-                <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-6 px-0 md:px-0">
+                <div class="flex gap-5 overflow-x-auto no-scrollbar pb-4 md:pb-0 md:grid md:grid-cols-5 -mx-4 px-4 md:mx-0 md:px-0">
 
                     <!-- Andhra Pradesh -->
-                    <div class="group relative rounded-2xl md:rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
+                    <div class="group flex-shrink-0 w-64 md:w-auto relative rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
                          onclick="openAPModal()">
                         <div class="aspect-[3/4] md:aspect-[2/3]">
-                            <img loading="lazy" decoding="async" src="Andhrapradesh.jpg"
+                            <img src="Andhrapradesh.jpg"
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Andhra Pradesh" />
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/40 to-transparent"></div>
@@ -297,10 +279,10 @@
                     </div>
 
                     <!-- Telangana -->
-                    <div class="group relative rounded-2xl md:rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
+                    <div class="group flex-shrink-0 w-64 md:w-auto relative rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
                          onclick="openTSModal()">
                         <div class="aspect-[3/4] md:aspect-[2/3]">
-                            <img loading="lazy" decoding="async" src="telangana.webp"
+                            <img src="telangana.webp"
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Telangana" />
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/40 to-transparent"></div>
@@ -326,10 +308,10 @@
                     </div>
 
                     <!-- Tamil Nadu -->
-                    <div class="group relative rounded-2xl md:rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
+                    <div class="group flex-shrink-0 w-64 md:w-auto relative rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
                          onclick="openTNModal()">
                         <div class="aspect-[3/4] md:aspect-[2/3]">
-                            <img loading="lazy" decoding="async" src="Tamil Nadu Most Famous Temples Tour.png"
+                            <img src="Tamil Nadu Most Famous Temples Tour.png"
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Tamil Nadu" />
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/40 to-transparent"></div>
@@ -355,10 +337,10 @@
                     </div>
 
                     <!-- Karnataka -->
-                    <div class="group relative rounded-2xl md:rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
+                    <div class="group flex-shrink-0 w-64 md:w-auto relative rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
                          onclick="openKAModal()">
                         <div class="aspect-[3/4] md:aspect-[2/3]">
-                            <img loading="lazy" decoding="async" src="Karnataka.JPG"
+                            <img src="Karnataka.JPG"
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Karnataka" />
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/40 to-transparent"></div>
@@ -384,10 +366,10 @@
                     </div>
 
                     <!-- Kerala -->
-                    <div class="group relative rounded-2xl md:rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
+                    <div class="group flex-shrink-0 w-64 md:w-auto relative rounded-3xl overflow-hidden cursor-pointer active:scale-95 transition-all duration-300 shadow-2xl"
                          onclick="openKLModal()">
                         <div class="aspect-[3/4] md:aspect-[2/3]">
-                            <img loading="lazy" decoding="async" src="kerala-backwaters.jpg"
+                            <img src="kerala-backwaters.jpg"
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Kerala" />
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-950/40 to-transparent"></div>
@@ -440,10 +422,10 @@
         <!-- INDIAN TOUR PACKAGES SECTION -->
         <!-- ============================================================ -->
         <section class="py-20 md:py-32 bg-gradient-to-b from-orange-50/50 to-white" id="indian-trips">
-            <div class="w-full max-w-7xl mx-auto px-0 md:px-6">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
 
                 <!-- Section Header -->
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-14 gap-6 px-1 md:px-0">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-14 gap-6">
                     <div>
                         <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">🇮🇳 Incredible India</span>
                         <h2 class="text-3xl md:text-5xl font-h2 text-on-surface">Indian Tour Packages</h2>
@@ -466,14 +448,14 @@
                     <!-- All India -->
                     <a href="#" onclick="filterIndianPkg('all'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="Indian_Tours.jpeg" alt="All India" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="Indian_Tours.jpeg" alt="All India" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">All India</span>
                     </a>
                     <!-- Kerala -->
                     <a href="#" onclick="filterIndianPkg('kerala'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="kerala-backwaters.jpg" alt="Kerala" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="kerala-backwaters.jpg" alt="Kerala" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">Kerala</span>
                         <span class="text-xs text-orange-500 font-bold">₹13,999+</span>
@@ -481,7 +463,7 @@
                     <!-- Goa -->
                     <a href="#" onclick="filterIndianPkg('goa'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="goa.webp" alt="Goa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="goa.webp" alt="Goa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">Goa</span>
                         <span class="text-xs text-orange-500 font-bold">₹8,999+</span>
@@ -489,7 +471,7 @@
                     <!-- Andaman -->
                     <a href="#" onclick="filterIndianPkg('andaman'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="maldives-luxury.png" alt="Andaman" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="maldives-luxury.png" alt="Andaman" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">Andaman</span>
                         <span class="text-xs text-orange-500 font-bold">₹12,999+</span>
@@ -497,7 +479,7 @@
                     <!-- Rajasthan -->
                     <a href="#" onclick="filterIndianPkg('rajasthan'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="Royal Rajasthan Experiencer.webp" alt="Rajasthan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="Royal Rajasthan Experiencer.webp" alt="Rajasthan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">Rajasthan</span>
                         <span class="text-xs text-orange-500 font-bold">₹13,999+</span>
@@ -505,7 +487,7 @@
                     <!-- Himachal -->
                     <a href="#" onclick="filterIndianPkg('himachal'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="Hill Station Escapes.jpg" alt="Himachal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="Hill Station Escapes.jpg" alt="Himachal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">Himachal</span>
                         <span class="text-xs text-orange-500 font-bold">₹11,999+</span>
@@ -513,7 +495,7 @@
                     <!-- Srinagar -->
                     <a href="#" onclick="filterIndianPkg('srinagar'); return false;" class="group flex flex-col items-center gap-2 p-3 bg-white rounded-2xl border border-teal-100 hover:border-primary hover:shadow-lg transition-all duration-300">
                         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-teal-50 group-hover:ring-primary transition-all duration-300">
-                            <img loading="lazy" decoding="async" src="Kashmir Paradise.webp" alt="Srinagar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <img src="Kashmir Paradise.webp" alt="Srinagar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         </div>
                         <span class="text-xs font-bold text-teal-900 text-center leading-tight">Srinagar</span>
                         <span class="text-xs text-orange-500 font-bold">₹14,999+</span>
@@ -543,7 +525,7 @@
                 </div>
 
                 <!-- Indian Packages Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6 px-0 md:px-0" id="indian-packages-grid">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="indian-packages-grid">
                     <!-- Dynamically rendered -->
                 </div>
 
@@ -565,7 +547,7 @@
                 <div class="absolute inset-0 bg-gradient-to-br from-teal-950/80 via-teal-950/60 to-orange-950/40 backdrop-blur-[2px]"></div>
             </div>
 
-            <div class="relative max-w-4xl mx-auto text-center text-white px-2 md:px-6">
+            <div class="relative max-w-4xl mx-auto text-center text-white px-6">
                 <span class="text-orange-400 font-bold uppercase tracking-[0.3em] text-xs md:text-xs mb-4 block">Ready for Adventure?</span>
                 <h2 class="text-3xl md:text-6xl font-h1 mb-6 leading-tight">Can't find your <span class="text-orange-400">Dream?</span></h2>
                 <p class="text-sm md:text-xl mb-10 opacity-90 font-light max-w-2xl mx-auto">We can customize any trip to fit your specific needs and budget. Just let us know where you want to go.</p>
@@ -598,7 +580,7 @@
 
             <!-- Hero Banner -->
             <div class="relative h-48 flex-shrink-0 overflow-hidden">
-                <img loading="lazy" decoding="async" src="Andhrapradesh.jpg" alt="Andhra Pradesh" class="w-full h-full object-cover" />
+                <img src="Andhrapradesh.jpg" alt="Andhra Pradesh" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/40 to-transparent"></div>
                 <button onclick="closeAPModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/40 transition-all">
                     <span class="material-symbols-outlined text-white">close</span>
@@ -773,7 +755,7 @@
         <div class="absolute inset-0 bg-teal-950/70 backdrop-blur-sm" onclick="closeTSModal()"></div>
         <div class="relative bg-white w-full max-w-2xl rounded-[40px] overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
             <div class="relative h-48 flex-shrink-0 overflow-hidden">
-                <img loading="lazy" decoding="async" src="telangana.webp" alt="Telangana" class="w-full h-full object-cover" />
+                <img src="telangana.webp" alt="Telangana" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/40 to-transparent"></div>
                 <button onclick="closeTSModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/40 transition-all"><span class="material-symbols-outlined text-white">close</span></button>
                 <div class="absolute bottom-5 left-6">
@@ -855,7 +837,7 @@
         <div class="absolute inset-0 bg-teal-950/70 backdrop-blur-sm" onclick="closeTNModal()"></div>
         <div class="relative bg-white w-full max-w-2xl rounded-[40px] overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
             <div class="relative h-48 flex-shrink-0 overflow-hidden">
-                <img loading="lazy" decoding="async" src="Tamil Nadu Most Famous Temples Tour.png" alt="Tamil Nadu" class="w-full h-full object-cover" />
+                <img src="Tamil Nadu Most Famous Temples Tour.png" alt="Tamil Nadu" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/40 to-transparent"></div>
                 <button onclick="closeTNModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/40 transition-all"><span class="material-symbols-outlined text-white">close</span></button>
                 <div class="absolute bottom-5 left-6">
@@ -937,7 +919,7 @@
         <div class="absolute inset-0 bg-teal-950/70 backdrop-blur-sm" onclick="closeKAModal()"></div>
         <div class="relative bg-white w-full max-w-2xl rounded-[40px] overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
             <div class="relative h-48 flex-shrink-0 overflow-hidden">
-                <img loading="lazy" decoding="async" src="Karnataka.JPG" alt="Karnataka" class="w-full h-full object-cover" />
+                <img src="Karnataka.JPG" alt="Karnataka" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/40 to-transparent"></div>
                 <button onclick="closeKAModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/40 transition-all"><span class="material-symbols-outlined text-white">close</span></button>
                 <div class="absolute bottom-5 left-6">
@@ -1019,7 +1001,7 @@
         <div class="absolute inset-0 bg-teal-950/70 backdrop-blur-sm" onclick="closeKLModal()"></div>
         <div class="relative bg-white w-full max-w-2xl rounded-[40px] overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
             <div class="relative h-48 flex-shrink-0 overflow-hidden">
-                <img loading="lazy" decoding="async" src="kerala-backwaters.jpg" alt="Kerala" class="w-full h-full object-cover" />
+                <img src="kerala-backwaters.jpg" alt="Kerala" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/40 to-transparent"></div>
                 <button onclick="closeKLModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/40 transition-all"><span class="material-symbols-outlined text-white">close</span></button>
                 <div class="absolute bottom-5 left-6">
@@ -1103,7 +1085,7 @@
             class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
             <div class="space-y-6">
                 <a href="index.html" class="inline-block">
-                    <img loading="lazy" decoding="async" src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-24 w-auto object-contain"
+                    <img src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-24 w-auto object-contain"
                         style="max-height:96px; filter: brightness(1);" />
                 </a>
                 <p class="text-teal-100/60 dark:text-slate-400">We make travel easy and fun for you and your family.</p>
@@ -1163,7 +1145,7 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-8 border-t border-teal-800 text-center text-teal-100/40 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+        <div class="max-w-7xl mx-auto px-8 py-8 border-t border-teal-800 text-center text-teal-100/40 text-xs">
             <p>© 2026 Drive In Holidays. Designed by <a href="https://www.theupliv.com"
                     class="text-orange-400 hover:underline" target="_blank">UPliv</a></p>
         </div>
@@ -1236,30 +1218,30 @@
                     noResults.classList.add('hidden');
                     filtered.forEach((d, index) => {
                         const card = document.createElement('div');
-                        card.className = 'group relative aspect-[4/5] rounded-xl md:rounded-[40px] overflow-hidden shadow-md md:shadow-xl active:scale-95 transition-all duration-500 fade-in';
+                        card.className = 'group relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-xl active:scale-95 transition-all duration-500 fade-in';
                         card.style.animationDelay = `${index * 50}ms`;
                         
                         const tagsHtml = d.tags.map(tag => {
                             const colors = tag === 'Hot' ? 'bg-orange-500 text-white' : 'bg-white/90 backdrop-blur-md text-teal-900';
-                            return `<span class="${colors} text-[8px] md:text-xs font-black px-1.5 md:px-3 py-0.5 md:py-1 rounded-full uppercase tracking-widest">${tag}</span>`;
+                            return `<span class="${colors} text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest">${tag}</span>`;
                         }).join('');
 
                         card.innerHTML = `
-                            <img loading="lazy" decoding="async" src="${d.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="${d.name}" />
+                            <img src="${d.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="${d.name}" />
                             <div class="absolute inset-0 destination-card-gradient"></div>
-                            <div class="absolute top-2 left-2 md:top-6 md:left-6 flex flex-wrap gap-1 md:gap-2">
+                            <div class="absolute top-6 left-6 flex gap-2">
                                 ${tagsHtml}
                             </div>
-                            <div class="absolute bottom-3 left-2 right-2 md:bottom-8 md:left-8 md:right-8">
-                                <p class="text-orange-400 text-[8px] md:text-xs font-bold uppercase tracking-widest mb-0.5 md:mb-2">${d.country}</p>
-                                <h3 class="text-white text-sm md:text-3xl font-h2 mb-1.5 md:mb-4 leading-tight">${d.name}</h3>
+                            <div class="absolute bottom-8 left-8 right-8">
+                                <p class="text-orange-400 text-xs font-bold uppercase tracking-widest mb-2">${d.country}</p>
+                                <h3 class="text-white text-3xl font-h2 mb-4">${d.name}</h3>
                                 <div class="flex items-center justify-between text-white/90">
-                                    <div class="flex items-center gap-1 md:gap-2">
-                                        <span class="material-symbols-outlined text-[10px] md:text-lg">schedule</span>
-                                        <span class="text-[9px] md:text-sm">${d.duration}</span>
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-lg">schedule</span>
+                                        <span class="text-sm">${d.duration}</span>
                                     </div>
                                     <button onclick="event.stopPropagation(); openBookingModal('${d.name}', '${d.price}')" 
-                                        class="bg-orange-400 text-teal-950 px-1.5 py-0.5 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-bold uppercase tracking-widest hover:bg-white transition-all">
+                                        class="bg-orange-400 text-teal-950 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white transition-all">
                                         Book Now
                                     </button>
                                 </div>
@@ -1352,7 +1334,7 @@
                     const meta = subCategoryMeta[sub] || subCategoryMeta.standard;
 
                     const card = document.createElement('div');
-                    card.className = 'group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-teal-50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 fade-in flex flex-col';
+                    card.className = 'group bg-white rounded-3xl overflow-hidden shadow-sm border border-teal-50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 fade-in flex flex-col';
                     card.style.animationDelay = i * 40 + 'ms';
 
                     const tagsHtml = (d.tags || []).slice(0, 2).map(tag =>
@@ -1363,12 +1345,12 @@
                         '<div class="relative aspect-[16/10] overflow-hidden">' +
                             '<img src="' + d.image + '" alt="' + d.name + '" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />' +
                             '<div class="absolute inset-0 bg-gradient-to-t from-teal-950/70 via-transparent to-transparent"></div>' +
-                            '<span class="' + meta.color + ' absolute top-2 left-2 md:top-4 md:left-4 text-[8px] md:text-xs font-black px-1.5 md:px-3 py-0.5 md:py-1 rounded-full uppercase tracking-wider shadow-lg">' + meta.icon + ' ' + meta.label + '</span>' +
-                            '<span class="absolute bottom-2 right-2 md:bottom-4 md:right-4 bg-white/95 text-teal-900 text-[10px] md:text-base font-black px-2 md:px-4 py-0.5 md:py-1.5 rounded-full shadow-lg">' + d.price + '</span>' +
+                            '<span class="' + meta.color + ' absolute top-4 left-4 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">' + meta.icon + ' ' + meta.label + '</span>' +
+                            '<span class="absolute bottom-4 right-4 bg-white/95 text-teal-900 text-base font-black px-4 py-1.5 rounded-full shadow-lg">' + d.price + '</span>' +
                         '</div>' +
-                        '<div class="p-2 md:p-5 flex flex-col flex-1">' +
-                            '<p class="text-orange-500 text-[8px] md:text-xs font-bold uppercase tracking-widest mb-0.5">India · ' + d.duration + '</p>' +
-                            '<h3 class="font-h2 text-on-surface text-[10px] md:text-lg leading-snug mb-1 md:mb-3 flex-1">' + d.name + '</h3>' +
+                        '<div class="p-5 flex flex-col flex-1">' +
+                            '<p class="text-orange-500 text-xs font-bold uppercase tracking-widest mb-1">India · ' + d.duration + '</p>' +
+                            '<h3 class="font-h2 text-on-surface text-base md:text-lg leading-snug mb-3 flex-1">' + d.name + '</h3>' +
                             '<div class="flex items-center justify-between mt-auto pt-3 border-t border-teal-50">' +
                                 '<div class="flex gap-1.5 flex-wrap">' + tagsHtml + '</div>' +
                                 '<button onclick="openBookingModal(\'' + d.name.replace(/'/g, "\\'") + '\', \'' + d.price + '\')" class="flex items-center gap-1.5 text-[11px] font-bold text-primary hover:text-orange-500 transition-colors whitespace-nowrap group">' +
@@ -1476,7 +1458,7 @@
     </script>
     <!-- Bottom Nav (Mobile) -->
     <div
-        class="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-t border-teal-50 z-[100] px-4 py-3 pb-6 flex justify-between items-center shadow-[0_-8px_30px_rgb(0,0,0,0.06)]">
+        class="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-t border-teal-50 z-[100] px-8 py-3 pb-6 flex justify-between items-center shadow-[0_-8px_30px_rgb(0,0,0,0.06)]">
         <a href="index.html" class="flex flex-col items-center gap-1 text-teal-900/40 transition-all active:scale-90">
             <span class="material-symbols-outlined text-2xl">home</span>
             <span class="text-xs font-bold uppercase tracking-widest">Home</span>

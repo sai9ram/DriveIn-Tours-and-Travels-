@@ -12,30 +12,15 @@
     <link rel="shortcut icon" type="image/jpeg" href="DriveIn Logo (2).jpeg" />
     <link rel="apple-touch-icon" href="DriveIn Logo (2).jpeg" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta_Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <!-- Security Shield: Protects code from casual inspection -->
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-            if(e.keyCode == 123) return false;
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
-            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
-        }
-        // Anti-Console Tech
-        setInterval(() => {
-            console.clear();
-            console.log("%cCode Protected by Drive In Holidays Security System", "color: #005454; font-size: 20px; font-weight: bold;");
-        }, 1000);
-    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -143,7 +128,7 @@
     <!-- TopNavBar -->
     <header
         class="sticky top-0 w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border-b border-teal-50/50 dark:border-slate-800 shadow-sm">
-        <div class="w-full max-w-7xl mx-auto px-0 md:px-6 h-16 md:h-20 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex justify-between items-center">
             <a href="#" class="flex items-center">
                 <img src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-16 md:h-24 w-auto object-contain"
                     style="max-height:96px;" />
@@ -179,16 +164,16 @@
     <main>
         <!-- Hero Section -->
         <section
-            class="relative min-h-[90vh] md:h-[870px] w-full overflow-hidden flex flex-col justify-center py-12 md:py-0">
+            class="relative min-h-[700px] md:h-[870px] w-full overflow-hidden flex flex-col justify-center py-12 md:py-0">
             <div class="absolute inset-0">
                 <img class="w-full h-full object-cover"
                     data-alt="A breathtaking panoramic view of a winding coastal road at sunset, with a sleek modern SUV parked at a scenic overlook. The golden hour light bathes the rugged cliffs and deep blue ocean in a warm, ethereal glow. The overall aesthetic is Nomad Modern, capturing a sense of freedom, adventure, and luxury exploration with high-key lighting and a rich teal and orange color palette."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIdyO4gJ7gJi_BSaIVpiF_wC90-dtW08vpyP9ULdQISgOcnQ8swnsBHtIoSsFZPyTWSSwdz6B0qDhAbVjvjNHENZZJEO15Ya8yZEiL0e5F6qMe9Xpwq-DAVkCBV4A-QyEn5VYTXjI2A65PFmHRQpKGoWPstYSLd55PNhZGfcsSTunzUhkr5pK_2VRj9JmJpJo3wJ1JCDjxMWOPY_SA7V1xnKMyDpo4MT63fB27f9WIwlDs36lsiPSYb6uQXaGPkkZDSILiEfKF0zb5" />
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-900/40 to-transparent"></div>
             </div>
-            <div class="relative w-full max-w-7xl mx-auto px-0 md:px-6 h-full flex flex-col justify-center">
-                <div class="max-w-2xl mb-8 md:mb-12 px-4 md:px-0">
-                    <h1 class="font-h1 text-white text-4xl md:text-6xl mb-4 md:mb-6 leading-[1.15] md:leading-tight">
+            <div class="relative max-w-7xl mx-auto px-4 md:px-6 h-full flex flex-col justify-center">
+                <div class="max-w-2xl mb-8 md:mb-12">
+                    <h1 class="font-h1 text-white text-3xl md:text-6xl mb-4 md:mb-6 leading-[1.15] md:leading-tight">
                         Best Tours and Travels in Tirupati:
                         Travel Anywhere by Car or Plane.</h1>
                     <p class="font-body-lg text-teal-50/90 text-base md:text-xl leading-relaxed">We help you plan the
@@ -197,8 +182,8 @@
                 </div>
                 <!-- Smart Search Box -->
                 <div id="search-box"
-                    class="w-full bg-white/95 backdrop-blur-xl p-0 md:p-8 rounded-none md:rounded-[32px] shadow-2xl max-w-5xl border-y md:border border-white/20 relative mx-0 md:mx-0 -mt-10 md:mt-0">
-                    <div class="p-6 md:p-0 grid grid-cols-1 md:grid-cols-5 gap-6">
+                    class="bg-white/95 backdrop-blur-xl p-6 md:p-8 rounded-[24px] md:rounded-[32px] shadow-2xl max-w-5xl border border-white/20 relative mx-4 md:mx-0 -mt-10 md:mt-0">
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
                         <div class="space-y-2 relative">
                             <label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">From (Your
                                 City)</label>
@@ -282,15 +267,15 @@
             </div>
         </section>
         <!-- Quick Categories -->
-        <section class="py-12 bg-white overflow-x-auto no-scrollbar">
-            <div class="w-full max-w-7xl mx-auto px-0">
+        <section class="py-16 bg-white overflow-x-auto no-scrollbar">
+            <div class="max-w-7xl mx-auto px-6">
                 <div class="flex justify-between items-center min-w-max gap-8 px-4">
                     <!-- Outside India -->
                     <a href="destinations.html?filter=international"
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img loading="lazy" decoding="async" src="Bali Escape.jpg" class="w-full h-full object-cover" alt="International" />
+                            <img src="Bali Escape.jpg" class="w-full h-full object-cover" alt="International" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -304,7 +289,7 @@
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img loading="lazy" decoding="async" src="Indian_Tours.jpeg" class="w-full h-full object-cover" alt="India Tours" />
+                            <img src="Indian_Tours.jpeg" class="w-full h-full object-cover" alt="India Tours" />
 
                         </div>
                         <span class="font-label-sm font-bold text-teal-900"> India Trip </span>
@@ -314,7 +299,7 @@
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img loading="lazy" decoding="async" src="Self_drive.jpeg" class="w-full h-full object-cover" alt="Self Drive" />
+                            <img src="Self_drive.jpeg" class="w-full h-full object-cover" alt="Self Drive" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -326,7 +311,7 @@
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img loading="lazy" decoding="async" src="newlywed.jpeg" class="w-full h-full object-cover" alt="Honeymoon" />
+                            <img src="newlywed.jpeg" class="w-full h-full object-cover" alt="Honeymoon" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -337,7 +322,7 @@
                     <div class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img loading="lazy" decoding="async" src="familymembers.jpeg" class="w-full h-full object-cover" alt="Family" />
+                            <img src="familymembers.jpeg" class="w-full h-full object-cover" alt="Family" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
 
                             </div>
@@ -349,7 +334,7 @@
                         class="flex flex-col items-center gap-3 group cursor-pointer text-center min-w-[140px]">
                         <div
                             class="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary-container/20">
-                            <img loading="lazy" decoding="async" src="premium_tour.jpeg" class="w-full h-full object-cover" alt="Luxury" />
+                            <img src="premium_tour.jpeg" class="w-full h-full object-cover" alt="Luxury" />
                             <div class="absolute inset-0 bg-teal-900/40 flex items-center justify-center">
                             </div>
                         </div>
@@ -360,9 +345,9 @@
         </section>
         <!-- Indian Tour Packages -->
         <section class="py-24 bg-white">
-            <div class="w-full max-w-7xl mx-auto px-0">
+            <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-4">
-                    <div class="px-2 md:px-0">
+                    <div>
                         <span
                             class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-2 block text-center md:text-left">Our
                             Homeland</span>
@@ -380,7 +365,7 @@
                 </div>
 
                 <!-- Category Chips (Mobile Scrollable) -->
-                <div class="flex gap-2 overflow-x-auto no-scrollbar mb-8 pb-2 px-2 md:px-0">
+                <div class="flex gap-2 overflow-x-auto no-scrollbar mb-8 pb-2 -mx-4 px-4 md:mx-0 md:px-0">
                     <button
                         class="px-5 py-2.5 bg-primary text-white rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap shadow-lg shadow-primary/20 active:scale-90 transition-all">All
                         India</button>
@@ -398,7 +383,7 @@
                     <div onclick="openBookingModal('Goa Beaches', '₹8,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="goa.webp" />
+                            src="goa.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -420,7 +405,7 @@
                     <div onclick="openBookingModal('Kerala Backwaters', '₹13,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="kerala-backwaters.jpg" />
+                            src="kerala-backwaters.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -438,7 +423,7 @@
                     <div onclick="openBookingModal('Andaman Islands', '₹12,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Bali Serenity.jpg" />
+                            src="Bali Serenity.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -460,7 +445,7 @@
                     <div onclick="openBookingModal('Kashmir Paradise', '₹14,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Kashmir Paradise.webp" />
+                            src="Kashmir Paradise.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -529,7 +514,7 @@
                     <div onclick="openBookingModal('Bali Escape', '₹49,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Bali Escape.jpg" />
+                            src="Bali Escape.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -552,7 +537,7 @@
                     <div onclick="openBookingModal('Dubai Skyline', '₹45,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Dubai Skyline.jpg" />
+                            src="Dubai Skyline.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -570,7 +555,7 @@
                     <div onclick="openBookingModal('Singapore City', '₹55,000')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Singapore City.jpg" />
+                            src="Singapore City.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -593,7 +578,7 @@
                     <div onclick="openBookingModal('Swiss Alps', '₹1,85,000')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Hill Station Escapes.jpg" />
+                            src="Hill Station Escapes.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1179,7 +1164,7 @@
                     <div
                         class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
                         <div class="h-56 md:h-64 relative">
-                            <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="Mauritius Shores.jpg" />
+                            <img class="w-full h-full object-cover" src="Mauritius Shores.jpg" />
                             <div
                                 class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-black text-teal-900 uppercase tracking-tighter">
                                 4 Days / 3 Nights
@@ -1206,7 +1191,7 @@
                     <div
                         class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
                         <div class="h-56 md:h-64 relative">
-                            <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="Swiss Alps.jpg" />
+                            <img class="w-full h-full object-cover" src="Swiss Alps.jpg" />
                             <div
                                 class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-black text-teal-900 uppercase tracking-tighter">
                                 10 Days / 9 Nights
@@ -1233,7 +1218,7 @@
                     <div
                         class="flex-shrink-0 w-[85vw] md:w-auto snap-center bg-white rounded-[32px] overflow-hidden shadow-sm border border-primary/5 active:scale-95 transition-all duration-300">
                         <div class="h-56 md:h-64 relative">
-                            <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="Majestic US Parks.jpg" />
+                            <img class="w-full h-full object-cover" src="Majestic US Parks.jpg" />
                             <div
                                 class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-black text-teal-900 uppercase tracking-tighter">
                                 6 Days / 5 Nights
@@ -1312,7 +1297,7 @@
                     <div onclick="openBookingModal('Andhra Pradesh Tours', '₹7,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Andhrapradesh.jpg" />
+                            src="Andhrapradesh.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -1334,7 +1319,7 @@
                     <div onclick="openBookingModal('Tamil Nadu Tours', '₹9,500')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Tamil Nadu Most Famous Temples Tour.png" />
+                            src="Tamil Nadu Most Famous Temples Tour.png" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1352,7 +1337,7 @@
                     <div onclick="openBookingModal('Telangana Tours', '₹8,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="telangana.webp" />
+                            src="telangana.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute top-3 left-3">
@@ -1374,7 +1359,7 @@
                     <div onclick="openBookingModal('Karnataka Tours', '₹11,500')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="Karnataka.JPG" />
+                            src="Karnataka.JPG" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1392,7 +1377,7 @@
                     <div onclick="openBookingModal('Kerala Tours', '₹13,999')"
                         class="group relative aspect-[4/5] md:h-[420px] md:aspect-auto rounded-3xl overflow-hidden shadow-sm active:scale-95 transition-all duration-300 cursor-pointer">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            loading="lazy" decoding="async" src="kerala-backwaters.jpg" />
+                            src="kerala-backwaters.jpg" />
                         <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-teal-950/20 to-transparent">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
@@ -1905,9 +1890,9 @@
     </main>
     <!-- Footer -->
     <footer
-        class="w-full mt-12 bg-teal-900 dark:bg-black border-t border-teal-800 dark:border-slate-900">
+        class="w-full rounded-t-[32px] mt-12 bg-teal-900 dark:bg-black border-t border-teal-800 dark:border-slate-900">
         <div
-            class="max-w-7xl mx-auto px-0 md:px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+            class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
             <div class="space-y-6">
                 <a href="#" class="inline-block">
                     <img src="DriveIn Logo (2).jpeg" alt="Drive In Holidays" class="h-24 w-auto object-contain"
