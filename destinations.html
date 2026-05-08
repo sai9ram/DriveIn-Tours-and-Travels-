@@ -1193,8 +1193,10 @@
             let currentFilter = 'all';
             let searchQuery = '';
 
-            // Handle incoming search query from Home
+            // Handle incoming parameters from Home
             const urlParams = new URLSearchParams(window.location.search);
+            let budgetQuery = urlParams.get('budget') || '';
+
             if (urlParams.has('search')) {
                 searchQuery = urlParams.get('search');
                 searchInput.value = searchQuery;
@@ -1205,9 +1207,29 @@
                     const matchesFilter = currentFilter === 'all' || 
                                        d.category === currentFilter || 
                                        (currentFilter === 'honeymoon' && d.tags.includes('Honeymoon'));
-                    const matchesSearch = d.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                                       d.country.toLowerCase().includes(searchQuery.toLowerCase());
-                    return matchesFilter && matchesSearch;
+                    
+                    // Enhanced Search: Check if name/country contains query OR query contains parts of name
+                    const q = searchQuery.toLowerCase().trim();
+                    const name = d.name.toLowerCase();
+                    const country = d.country.toLowerCase();
+                    
+                    const matchesSearch = !q || 
+                                       name.includes(q) || 
+                                       country.includes(q) || 
+                                       (q.length > 3 && (q.includes(name.split(' ')[0]) || q.includes(country.split(' ')[0])));
+
+                    // Budget Filtering
+                    let matchesBudget = true;
+                    if (budgetQuery) {
+                        const maxBudget = parseInt(budgetQuery.replace(/[^\d]/g, ''));
+                        const packagePrice = parseInt(d.price.replace(/[^\d]/g, ''));
+                        
+                        if (!isNaN(maxBudget) && !isNaN(packagePrice)) {
+                            matchesBudget = packagePrice <= maxBudget;
+                        }
+                    }
+
+                    return matchesFilter && matchesSearch && matchesBudget;
                 });
 
                 grid.innerHTML = '';
@@ -1390,11 +1412,9 @@
                 document.getElementById('indian-trips').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 renderIndian();
             };
-            // Handle URL Parameters (deep-link support)
-            const urlParams2 = new URLSearchParams(window.location.search);
-            const filterParam = urlParams2.get('filter');
-            const subCatParam = urlParams2.get('subcategory');
-            const searchParam = urlParams2.get('search');
+            // Handle additional URL Parameters (deep-link support)
+            const filterParam = urlParams.get('filter');
+            const subCatParam = urlParams.get('subcategory');
 
             if (filterParam) {
                 const btn = document.querySelector(`[data-filter="${filterParam}"]`);
@@ -1408,12 +1428,6 @@
                 if (['short', 'standard', 'hill', 'heritage', 'premium'].includes(subCatParam)) {
                     document.getElementById('indian-trips')?.scrollIntoView({ behavior: 'smooth' });
                 }
-            }
-
-            if (searchParam) {
-                searchInput.value = searchParam;
-                searchQuery = searchParam;
-                render();
             }
 
             renderIndian();

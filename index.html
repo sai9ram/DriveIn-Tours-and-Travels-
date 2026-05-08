@@ -2019,8 +2019,16 @@
 
             // Search Trigger
             searchBtn.addEventListener('click', () => {
-                const query = searchTo.value;
+                let query = searchTo.value.trim();
+                const budget = document.getElementById('search-budget').value.trim();
+                
                 if (!query) return;
+
+                // Handle "City to Destination" format in case user types it all in 'To' field
+                if (query.toLowerCase().includes(' to ')) {
+                    const parts = query.toLowerCase().split(' to ');
+                    query = parts[parts.length - 1].trim();
+                }
 
                 // Mock loading
                 btnText.classList.add('hidden');
@@ -2029,7 +2037,9 @@
                 searchBtn.disabled = true;
 
                 setTimeout(() => {
-                    window.location.href = `destinations.html?search=${encodeURIComponent(query)}`;
+                    let url = `destinations.html?search=${encodeURIComponent(query)}`;
+                    if (budget) url += `&budget=${encodeURIComponent(budget)}`;
+                    window.location.href = url;
                 }, 800);
             });
 
