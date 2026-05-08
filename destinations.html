@@ -1216,7 +1216,7 @@
                     const matchesSearch = !q || 
                                        name.includes(q) || 
                                        country.includes(q) || 
-                                       (q.length > 3 && (q.includes(name.split(' ')[0]) || q.includes(country.split(' ')[0])));
+                                       (q.length > 2 && (q.includes(name.split(' ')[0].toLowerCase()) || q.includes(country.split(' ')[0].toLowerCase())));
 
                     // Budget Filtering
                     let matchesBudget = true;
@@ -1303,6 +1303,11 @@
                     });
                     btn.classList.remove('bg-teal-50', 'text-teal-900');
                     btn.classList.add('bg-primary', 'text-white');
+                    
+                    // Clear search and budget when switching categories to allow browsing
+                    searchQuery = '';
+                    budgetQuery = '';
+                    searchInput.value = '';
                     
                     currentFilter = btn.dataset.filter;
                     render();
